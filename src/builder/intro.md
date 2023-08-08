@@ -15,7 +15,7 @@ You can reorganize your hotbars by clicking items like you would in any other in
 ### Capabilities
 On the left-hand side you can find a number of buttons for toggling building **Capabilities**. A raised or lighter background means the Capability is disabled, while a depressed or darker background means the Capability is enabled.
 
-Documentation for Capabilities can be found [here](/capabilities.md)
+Documentation for Capabilities can be found [here](/capabilities/intro.md)
 
 ### Gamemode Switchers
 Above the hotbar swappers are 3 buttons for quickly swapping to other gamemodes. Using these buttons can be slightly faster than messing around with F3+F4 or chat commands.
