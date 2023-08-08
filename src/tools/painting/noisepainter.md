@@ -15,6 +15,9 @@ Lacunarity and Gain can only be configured when you have more than one octave fo
 - **Lacunarity:** This influences the ‘frequency’ of each octave. A higher value increases the frequency, leading to smaller features in the noise pattern.
 - **Gain:** This controls the amplitude of each octave. A higher value will increase the influence of each successive octave. A lower value will make effect of the octavation more subtle.
 - **Seed:** The seed value is used to initialize the noise generation algorithm, providing a starting point. Different seeds produce different noise patterns, but the same seed will always produce the same pattern. Keeping the same seed is useful for when you want to continue a pattern rather than starting a new one.
+- **Jitter:** This value controls how uniform the cellular noise appears by limiting how much the seed points can move off their starting grid arrangement.<br>
+A value of 0.0 will return a perfectly uniform grid pattern, 1.0 returns a minimally uniform pattern.<br>
+Applicable only to the cellular noise types **Voronoi Edges**, **Worley**, and **Metaballs**. 
 
 ### Simplex
     
