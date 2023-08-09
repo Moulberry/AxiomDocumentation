@@ -1,6 +1,6 @@
 # Views
 
-Views are a system for keeping track of multiple named locations in your world, giving you the ability to swap between locations (even across dimensions) easily.
+Views are a system for keeping track of multiple named locations in your world, giving you the ability to swap between locations (even across dimensions) easily. 
 
 A new view can be created in the [View submenu](mainmenubar.md#view) or by clicking on the ‘+’ button next to the ‘Main’ view above the game window in the Axiom Editor UI. 
  
