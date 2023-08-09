@@ -40,7 +40,8 @@ The View submenu lets you configure options related to viewing and rendering cer
 [^note1]: Be aware that biomes in Minecraft are defined in a 4x4x4 grid. However, in order to make biomes feel more natural, vanilla warps the biomes visually. The biome overlay shows the "real" position of biomes, while biome blending and the f3 screen show the "warped" position of biomes.
     
 [^note2]: Lava and other non-translucent fluids (if the game is modded) are not affected by opacity due to performance and mod compatibility concerns.
-    
+
+In the view submenu, you can enable the 'Show Key Presses' option. This shows your inputs including mouse clicks on the bottom right of the viewport. This is useful for making tutorials.
 ## Create
     
 The **Create** submenu lets you make geometric shapes with your active block. Since these shapes are computed mathematically, they can adjust to any angle and transformation, giving you a lot of control over their look. When you 'place' these objects, you can use the [gizmo](gizmos.md) to reposition them and rotate them at arbitrary angles.
