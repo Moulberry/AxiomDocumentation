@@ -35,3 +35,14 @@ The 'Below' condition is true when the block directly below the target block mat
 The 'Near' condition is true when any of the blocks in the 3x3 area (26 blocks) surrounding the target match the specified block or block state.
 - **Neighbor**
 The 'Neighbor' condition returns true when any of the six blocks directly adjacent (up, down, north, south, east, west) to the target match the specified block or block state which allows the mask to check the immediate vicinity of the target block.
+
+> **IMPORTANT**
+> The tool masks window must be open in order to be in effect. You may dock the window to the side in order to have it open all the time.
+>
+> Tools currently incompattible with Masks:
+> - Smooth Tool
+> - Distort Tool
+> - Roughen Tool
+> - Shatter Tool
+> - Extrude Tool
+
