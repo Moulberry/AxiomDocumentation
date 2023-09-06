@@ -39,4 +39,6 @@ The 'Neighbor' condition returns true when any of the six blocks directly adjace
 > **IMPORTANT**
 > 
 > The tool masks window must be open in order to take effect. You may dock the window to the side in order to have it open all the time.
-
+>
+> Tools currently incompatible with Masks:
+> - Slope Tool
