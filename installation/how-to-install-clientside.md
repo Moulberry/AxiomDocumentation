@@ -28,7 +28,7 @@ If you're using Sodium, make sure it's updated to 0.5.1+. [LINK](https://modrint
 
 2. Open your Minecraft folder and locate the **mod** folder. You can use the **run** command for the easiest way to find it.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>For fast enter to your run command u can use Windows+R and write <strong><code>%AppData%</code></strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>For fast enter to your run command u can use Windows+R and write <strong><code>%AppData%</code></strong></p></figcaption></figure>
 
 3. Afterward, drop your downloaded mods into the mod folder.
 
