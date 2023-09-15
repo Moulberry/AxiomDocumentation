@@ -1,4 +1,8 @@
-# Tinker
+<div style="display: flex; align-items: center;">
+    <img src="img\Tinker_Icon.png" alt="" width="35" height="35" style="margin-right: 10px;">
+    <h1>Tinker</h1>
+</div>
+
 The **Tinker** capability has various features related to right-clicking with your fist on blocks. Tinker often can be used in place of the debug stick, being slighty faster compared to the debug stick's clunky interface but sometimes lacking the ability to change some non-visual properties.
 
 Aiming at specific parts of a block can change the effect of the tinker. This lets you quickly change full blocks into stairs, stairs into slabs and vice versa. It also lets you easily adjust walls/fences to create states that Minecraft normally doesn’t allow.
@@ -37,3 +41,4 @@ Additionally:
 - Right-clicking with Shears on removes mossy
 - Right-clicking on a pot with a plant replaces the plant inside the pot
 
+![Alt text](img/Tinker_min.gif)
