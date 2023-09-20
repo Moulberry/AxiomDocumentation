@@ -3,3 +3,5 @@ Welcome to the Axiom Documentation, an introductory book about the all-in-one to
 
 ## Who Axiom Is For
 Axiom is intended for everyone from novice to professional. The tools are intuitive and easy to approach, while still providing lots of depth through settings for experienced users.
+![Alt text](capabilities/img/Axiom_preview.png)
+© ThePossibilitiesOf
