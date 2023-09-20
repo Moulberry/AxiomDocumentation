@@ -32,6 +32,7 @@
         - [Noise Painter](tools/painting/noisepainter.md)
         - [Biome Painter](tools/painting/biomepainter.md)
         - [Clentaminator](tools/painting/clentaminator.md)
+        - [Gradient Painter](tools/painting/gradientpainter.md)
     - [Drawing Tools](tools/drawing/intro.md)
         - [Freehand Draw](tools/drawing/freehanddraw.md)
         - [Sculpt Draw](tools/drawing/sculptdraw.md)
@@ -50,4 +51,5 @@
         - [Shatter](tools/manipulation/shatter.md)
         - [Extrude](tools/manipulation/extrude.md)
     - [Ruler Tool](tools/ruler.md)
+    - [Path Tool](tools/path.md)
 
