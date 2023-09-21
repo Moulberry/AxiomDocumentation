@@ -1,6 +1,8 @@
 # Main Menu Bar
 The main menu bar gives users access to crucial functionality of the mod. Here you can find menu items for accessing windows, manipulating selections, performing operations and viewing helpful information.
 
+![Alt text](<img/Main Menu Bar.png>)
+
 ## Edit
     
 | Function       | Default Shortcut | Description                                              |
