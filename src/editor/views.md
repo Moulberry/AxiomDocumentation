@@ -7,3 +7,8 @@ A new view can be created in the [View submenu](mainmenubar.md#view) or by click
 Views will keep track of your last position and teleport you back to that location when you switch back to the view. If you want to make sure the view stays at the correct location, you can turn on *Pin World* and *Pin Location* options. Pinning the location will make it so that you always teleport back to the pinned spot when you switch to the view.
 
 > Tip: If a location is pinned, you can teleport to the pinned location simply by clicking the view tab again, even if the tab is already selected
+
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="img\View.gif" alt="View" style="margin-right: 10px;">
+</div>

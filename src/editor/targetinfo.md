@@ -7,3 +7,7 @@ The window contains:
 - The position of that block in the world.
 - The biome at that position.
 - The distance from your camera to that position.
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="img\Target info.png" alt="Target Info" style="margin-right: 10px;">
+</div>

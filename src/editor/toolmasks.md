@@ -42,3 +42,7 @@ The 'Neighbor' condition returns true when any of the six blocks directly adjace
 >
 > Tools currently incompatible with Masks:
 > - Slope Tool
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="img\Tool mask.png" alt="Tool mask" style="margin-right: 10px;">
+</div>

@@ -15,3 +15,7 @@ Placements can be repositioned and rotated using the [Gizmo](gizmos.md).
 Once the placement is in the correct position, you can use Enter or Ctrl+V to confirm it. To cancel a placement, use the Delete key.
 
 > Tip: The placement can be rotated clockwise using the Ctrl+R keybind, and can be flipped in the direction of your mouse vector using the Ctrl+F keybind.
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="img\Clipboard.png" alt="Clipboard" style="margin-right: 10px;">
+</div>
