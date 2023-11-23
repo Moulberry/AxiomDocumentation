@@ -8,3 +8,7 @@ Blocks in the Editor UI can be drag-dropped on different locations to various ef
  - Into the main viewport to flood replace the targeted block with the dropped block
 
 The **Active Block** can be quickly set using 'pick block', which is bound to middle-click by default.
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="img\Active Block.png" alt="Active Block" style="margin-right: 10px;">
+</div>

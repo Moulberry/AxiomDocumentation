@@ -30,7 +30,9 @@ On the right-hand side you can find a slider which allows you to quickly change 
 
 ![Alt text](<../capabilities/img/Flight Speed.png>)
 
-# Sidebar (right hand) 
-On your right hand, you have an additional slot for building and editing your projects. To use it, you need to select the 10th slot with the mouse wheel and use Alt+Left to select the mode. For more details, you can find them [LINK].
+# Builder slot  (right hand) 
+On your right hand, you have an additional slot for building and editing your projects. To use it, you need to select the 10th slot with the mouse wheel and use AltLeft to select the mode. 
+
+Documentation for Sidebar can be found [here](/src/builderslot\intro.md)
 
 ![Alt text](<../capabilities/img/Sidebar (right hand).png>)

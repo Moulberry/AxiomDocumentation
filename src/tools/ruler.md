@@ -4,6 +4,7 @@ The **Ruler** Tool is designed to measure the distance between two or more point
 
 When you check the tool options, you'll find more information about these points. What's shown depends on whether you've chosen two or more points.
 
+![Alt text](img/Ruller.png)
 Here's the information you'll see:
 
 - Total Length (Euclidean): This is the straight-line distance from the first point to the last one, as if a bird flew directly there, not caring about the blocks in between.
