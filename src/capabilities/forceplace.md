@@ -1,14 +1,16 @@
-<div style="display: flex; align-items: center;">
-    <img src="img\Force_Place_icon.png" alt="" width="35" height="35" style="margin-right: 10px;">
-    <h1>Force Place</h1>
-</div>
+# Force Place
 
 The **Force Place** capability bypasses normal placement restrictions.
 
 - Blocks which normally need to be attached to solid blocks can be placed in mid air
 - Blocks can be placed inside entities (including yourself)
-- Plant blocks no longer need to be placed on farmland (or sand/dirt for sugarcane and clay for dripleaf)
+- Plant blocks no longer need to be placed on farmland
 - Blocks can be placed regardless of light level
-- And many more!
+- And much more!
 
-![Alt text](img/Force_Place_min.gif)
+> Force Place is best used in combination with [No Updates](noupdates.md) in order to ensure illegally placed blocks don't break when updated. You may also need to disable random updates with /gamerule randomTickSpeed 0
+
+<video width="960" height="520" controls autoplay loop>
+    <source src="/img/ForcePlace.mp4" type="video/mp4">
+</video>
+

@@ -1,7 +1,4 @@
-<div style="display: flex; align-items: center;">
-    <img src="img\Tinker_Icon.png" alt="" width="35" height="35" style="margin-right: 10px;">
-    <h1>Tinker</h1>
-</div>
+# Tinker
 
 The **Tinker** capability has various features related to right-clicking with your fist on blocks. Tinker often can be used in place of the debug stick, being slighty faster compared to the debug stick's clunky interface but sometimes lacking the ability to change some non-visual properties.
 
@@ -35,10 +32,7 @@ Tinker interactions can be negated while the capability is toggled on by either 
 |Any block with 'Age' property        |Cycles age                                                   |
 |Cake                                 |Cycles bites                                                 |
 
-
 Additionally:
 - Right-clicking with Moss Block on cobblestone/stone converts the block into its mossy variant
 - Right-clicking with Shears on removes mossy
 - Right-clicking on a pot with a plant replaces the plant inside the pot
-
-![Alt text](img/Tinker_min.gif)

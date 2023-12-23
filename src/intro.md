@@ -3,5 +3,11 @@ Welcome to the Axiom Documentation, an introductory book about the all-in-one to
 
 ## Who Axiom Is For
 Axiom is intended for everyone from novice to professional. The tools are intuitive and easy to approach, while still providing lots of depth through settings for experienced users.
-![Alt text](capabilities/img/Axiom_preview.png)
-© ThePossibilitiesOf
+
+## Basic Controls
+
+To access the [Builder Mode](builder/intro.md) menu, press Left Alt
+
+To open/close the [Editor Mode](editor/intro.md), press Right Shift
+
+These keybinds can be adjusted in Minecraft's controls menu (Esc > Options > Controls)
