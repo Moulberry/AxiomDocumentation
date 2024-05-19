@@ -2,15 +2,15 @@
 
 The Script Brush is a very unique tool, it allows you to create your own brush. This can be for easing the building process or adding new tools to axiom.
 
-- The Script Brush is an advanced tool catered towards advanced users. The brush requires some knowledge in programming languages like Python. 
+- The Script Brush is an advanced tool catered towards advanced users. The brush requires some knowledge of programming languages like Python. 
 
 - An IDE[^note4] window is used to input your code. It uses a similar language to Python called Lua[^note1].
 
-- Lua doesn't require line indentation like most languages but axiom provides a tabbing feature to indent. There is only one built-in library[^note3] and does not include any others.
+- Lua doesn't require line indentation like most languages but axiom provides a tabbing feature to indent. There is only one built-in library[^note3] and there are currently no others.
 
 ### The Script must return a block or use setBlock() to modify blocks in the world.
 
-There are many predefined variables and functions, these can be used throughout the script to interact with the world. Listed below, are all variables and functions with descriptions and examples.
+There are many predefined variables and functions that can be used throughout the script to interact with the world. Listed below, are all variables and functions with descriptions and examples.
 
 ## Custom Variables
 
@@ -84,7 +84,7 @@ end
 
 [^note1]: Lua is a lightweight programming language designed for embedded use within applications.
 
-[^note2]: Blockstate IDs are calculated using [Block IDs](https://minecraftitemids.com/). The formula for blockstate IDs are `-n-x` where n is the Block ID and x is the block state.
+[^note2]: Blockstate IDs are calculated using [Block IDs](https://minecraftitemids.com/). The formula for blockstate IDs is `-n-x` where n is the Block ID and x is the block state.
 
 [^note3]: The [Math Library](https://www.lua.org/pil/18.html) is the only built-in library in the Script Brush.
 
