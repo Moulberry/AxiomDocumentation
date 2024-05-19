@@ -8,6 +8,8 @@ The Script Brush is a very unique tool, it allows you to create your own brush. 
 
 - Lua doesn't require line indentation like most languages but axiom provides a tabbing feature to indent. There is only one built-in library[^note3] and does not include any others.
 
+The Script must return a blockstate or use setBlock() to create blocks in the world.
+
 There are many predefined variables and functions, these can be used throughout the script to interact with the world. Listed below, are all variables and functions with descriptions and examples.
 
 ## Custom Variables
