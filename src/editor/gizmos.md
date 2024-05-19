@@ -7,3 +7,5 @@ A gizmo can contain the following elements:
 - **Center Node** The center node can be clicked and dragged to move the gizmo on all 3 axis. While dragging, the gizmo will maintain the same distance to the camera.
 - **Rotation Rings** Some operations like placement or shape placement will add a rotation ring to the Gizmo, allowing you to perform rotations in addition to translations. The rotation ring can be grabbed and drag to rotate the object around that axis.
 
+- **Global Gizmos** A global gizmo has its rotation and axis arrows locked to the world xyz.
+- **Local Gizmos** Unlike global gizmos, local gizmos have their rotation and axis locked to the object itself. Rotating your object 45 degrees will alter your axis arrows by 45 degrees.

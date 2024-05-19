@@ -41,6 +41,7 @@
         - [Biome Painter](tools/painting/biomepainter.md)
         - [Clentaminator](tools/painting/clentaminator.md)
         - [Gradient Painter](tools/painting/gradientpainter.md)
+        - [Script Brush](tools/painting/scriptbrush.md)
     - [Drawing Tools](tools/drawing/intro.md)
         - [Freehand Draw](tools/drawing/freehanddraw.md)
         - [Sculpt Draw](tools/drawing/sculptdraw.md)
