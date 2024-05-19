@@ -4,6 +4,8 @@ The Shape Tool lets you make geometric shapes with your active block. Since thes
 
 Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling rotation using the gizmo, you can also alter the angle sliders for yaw, pitch, and roll in the 'advanced options' dropdown. Plus, there are options for making the shapes hollow, placing only the outer layer.
 
+## List of Shapes
+
 | Shapes      |
 |-------------|
 | Sphere      |
@@ -17,16 +19,22 @@ Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling r
 | Dodecahedron|
 | Icosahedron |
 
+## Options
+
 | Option       | Description                                                       |
 |--------------|-------------------------------------------------------------------|
 | Separate XYZ | When enabled, all three scale axes can be modified separately.    |
 | Diameter     | This slider controls the size or scale of the selected shape.     |
 | Advanced     | Allows you to directly alter the yaw, pitch and roll via sliders. |
 
+## Modifiers
+
 | Modifier | Description                           |
 |----------|---------------------------------------|
 | Hollow   | Generates the shape filled with air   |
 | Metaball | Applies a melting effect to the shape |
+
+## Placement
 
 | Placement           | Description                                                 |
 |---------------------|-------------------------------------------------------------|

@@ -8,6 +8,8 @@ The Script Brush is a very unique tool, it allows you to create your own brush. 
 
 - Lua doesn't require line indentation like most languages but axiom provides a tabbing feature to indent. There is only one built-in library[^note3] and does not include any others.
 
+# The Script must return a block or use setBlock() to modify blocks in the world.
+
 There are many predefined variables and functions, these can be used throughout the script to interact with the world. Listed below, are all variables and functions with descriptions and examples.
 
 ## Custom Variables
@@ -36,13 +38,13 @@ There are many predefined variables and functions, these can be used throughout 
 
 Template Variables are not shown in the help text. Template Variables are used to visually display tool settings, removing the need to edit values within the script itself. Most Template Variables Use a **title**, this is used to display the usage or function of the specific Template Variable. The **default** value is used to set the most appropriate value within the range. The **min** and **max** variables are used to set the ranges on sliders.
 
-| Template Variable                         | Description                           | Example                            |
-|-------------------------------------------|---------------------------------------|------------------------------------|
-| $once$                                    | Runs the script once per click.       | $once$                             |
-| $blockState(title,block)$                 | Allows blocks to be input using GUI.  | $blockState(Block to Paint,stone)$ |
-| $int(title,default,min,max)$              | Creates a slider with whole values.   | $int(Randomness Multiplier,1,0,2)$ |
-| $float(title,default,min,max)$            | Creates a slider with decimal values. | $float(Noise Threshold,0.5,0,1)$   |
-| $boolean(title,default(true/false))$      | Creates a toggle                      | $boolean(Disable Randomness,true)$ |
+| Template Variable                     | Description                           | Example                            |
+|---------------------------------------|---------------------------------------|------------------------------------|
+| `$once$`                              | Runs the script once per click.       | $once$                             |
+| `$blockState(title,block)$`           | Allows blocks to be input using GUI.  | $blockState(Block to Paint,stone)$ |
+| `$int(title,default,min,max)$`        | Creates a slider with whole values.   | $int(Randomness Multiplier,1,0,2)$ |
+| `$float(title,default,min,max)$`      | Creates a slider with decimal values. | $float(Noise Threshold,0.5,0,1)$   |
+| `$boolean(title,default(true/false))$`| Creates a toggle                      | $boolean(Disable Randomness,true)$ |
 
 ## Code Examples
 
