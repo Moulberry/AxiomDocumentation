@@ -1,8 +1,12 @@
-## Script Brush
+# Script Brush
 
 The Script Brush is a very unique tool, it allows you to create your own brush. This can be for easing the building process or adding new tools to axiom.
 
+## Key Points
+
 - The Script Brush is an advanced tool catered towards advanced users. The brush requires some knowledge of programming languages like Python. 
+
+- The Script Brush is similar to [Mask Scripting](/editor/toolmasks.md).
 
 - An IDE[^note1] window is used to input your code. It uses a similar language to Python called Lua[^note2].
 
