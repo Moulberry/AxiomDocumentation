@@ -4,7 +4,7 @@ The Script Brush is a very unique tool, it allows you to create your own brush. 
 
 - The Script Brush is an advanced tool catered towards advanced users. The brush requires some knowledge of programming languages like Python. 
 
-- An IDE[^note4] window is used to input your code. It uses a similar language to Python called Lua[^note1].
+- An IDE[^note1] window is used to input your code. It uses a similar language to Python called Lua[^note2].
 
 - Lua doesn't require line indentation like most languages but axiom provides a tabbing feature to indent. There is only one built-in library[^note3] and there are currently no others.
 
@@ -17,14 +17,14 @@ There are many predefined variables and functions that can be used throughout th
 | Variables | Description                                                    | Example      |
 |-----------|----------------------------------------------------------------|--------------|
 | x,y,z     | These three variables represent the XYZ coordinates.           | if y==5      |
-| blocks    | Can be used to retrieve the blockstate[^note2] ID for a block. | blocks.stone |
+| blocks    | Can be used to retrieve the blockstate[^note4] ID for a block. | blocks.stone |
 
 ## Custom Functions
 
-| Functions                                 | Description                                                                                       | Example                                                                        |
+|  <div style="width:100px">Functions</div> | Description                                                                                       | Example                                                                        |
 |-------------------------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | getBlock(x,y,z)                           | Returns the block ID at the given position (x,y,z).                                               | if getBlock(x,y,z)==blocks.stone                                               |
-| getBlockState(x,y,z)                      | Returns the blockstate[^note2] ID at a given position.                                            | if getBlockstate(x,y,z)==withBlockProperty(blocks.chain,"axis=x")              |
+| getBlockState(x,y,z)                      | Returns the blockstate[^note4] ID at a given position.                                            | if getBlockstate(x,y,z)==withBlockProperty(blocks.chain,"axis=x")              |
 | getHighestBlockYAt(x,z)                   | Returns the Y value of the highest block on the XZ coordinates.                                   | if getHighestBlockYAt(x,z)==20                                                 |
 | getSimplexNoise(x,y,z,"seed")             | Returns a value between 0 and 1, representing the Simplex noise for the provided coordinates.     | if getSimplexNoise(x,y,z,"WILLATRONIXisCOOL")=>0.5                             |
 | getVoroniEdgeNoise(x,y,z,"seed")          | Returns a value between 0 and 1, representing the Voroni Edge noise for the provided coordinates. | if getVoroniEdgeNoise(x,y,z,"coolseed")=>0.5                                   |
@@ -48,9 +48,9 @@ Template Variables are not shown in the help text. Template Variables are used t
 
 ## Code Examples
 
-The script below places lily pads above water using white noise and simplex noise.
+### The script below places lily pads above water using white noise and simplex noise.
 
-<pre>
+```lua
 chance=$float(Chance,0.5,0,1)$
 multiplier=$float(Multiplier,1,0,2)$
 
@@ -59,11 +59,11 @@ noise=getSimplexNoise(x/8,y/8,z/8)
 if getBlock(x,y-1,z)==blocks.water  and getBlock(x,y,z)==blocks.air and noise<(0.5*multiplier) and math.random()< chance then
     return blocks.lily_pad
 end
-</pre>
+```
 
-This more advanced script generates kelp underwater at a set length.
+### This more advanced script generates kelp underwater at a set length.
 
-<pre>
+```lua
 multiplier=$float(Multiplier,1,0.01,4)$
 heightMax=$int(Maximum Height,25,1,50)$
 
@@ -78,14 +78,14 @@ if noise<(multiplier*0.1) and isSolid(getBlock(x,y-length,z)) and getBlock(x,y,z
     end
     return blocks.kelp
 end
-</pre>
+```
 
 ## References
 
-[^note1]: Lua is a lightweight programming language designed for embedded use within applications.
+[^note1]: An integrated development environment (IDE) is a software application that provides comprehensive facilities for software development.
 
-[^note2]: Blockstate IDs are calculated using [Block IDs](https://minecraftitemids.com/). The formula for blockstate IDs is `-n-x` where n is the Block ID and x is the block state.
+[^note2]: Lua is a lightweight programming language designed for embedded use within applications.
 
 [^note3]: The [Math Library](https://www.lua.org/pil/18.html) is the only built-in library in the Script Brush.
 
-[^note4]: An integrated development environment (IDE) is a software application that provides comprehensive facilities for software development.
+[^note4]: Blockstate IDs are calculated using [Block IDs](https://minecraftitemids.com/). The formula for blockstate IDs is `-n-x` where n is the Block ID and x is the block state.
