@@ -54,7 +54,7 @@ Template Variables are not shown in the help text. Template Variables are used t
 | `$float(title,default,min,max)$`      | Creates a slider with decimal values. | `$float(Noise Threshold,0.5,0,1)$`   |
 | `$boolean(title,default(true/false))$`| Creates a toggle                      | `$boolean(Disable Randomness,true)$` |
 
-## Spotting And Resolving Errors
+<!-- # Spotting And Resolving Errors
 
 These four code examples have some issues with them. As you go down, the problems are harder to solve. You can click on the reveal buttons to see how they would be fixed. 
 
@@ -181,7 +181,7 @@ end
 <details>
     <summary>Click to reveal the fix</summary>
     The first error was caused by the `for` loop using incorrect syntax. The proper syntax would be `for i=0, tries do`. The second error is split into two, both block properties for the upper and lower halves are incorrect. They should be "half=lower" for example. The last error which caused floating flowers, was caused by an incorrect operator. The last check before placing the one tall flower should exclude the `not` operator.
-</details>
+</details>--> 
 
 ## References
 
