@@ -35,7 +35,7 @@ Masks are conditions that depend on the target's state or the surrounding blocks
 
 # Scripting
 
-Similar to the [Script Brush](/tools/painting/scriptbrush.md), the mask scripting allows users to input custom scripts using Lua.
+Similar to the [Script Brush](/tools/painting/scriptbrush.md), the mask scripting allows users to input custom scripts using Lua. However, the rule of returning a boolean value still applies.
 
 ## Custom Variables
 
