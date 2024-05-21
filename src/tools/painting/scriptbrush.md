@@ -60,7 +60,7 @@ Template Variables are not shown in the help text. Template Variables are used t
 
 These four code examples range from a novice user all the way to a professional in terms of difficulty. Each script provides a description and a breakdown of how the script works.
 
-> [!NOTE]Info
+> [!NOTE]
 > Feel free to copy these and mess around with them.
 
 ### **Novice**
