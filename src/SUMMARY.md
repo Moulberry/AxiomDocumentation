@@ -62,4 +62,6 @@
         - [Modify](tools/manipulation/modify.md)
     - [Ruler Tool](tools/ruler.md)
     - [Path Tool](tools/path.md)
-
+- [Advanced](advanced/intro.md)
+    - [Commands](advanced/commands.md)
+    - [Config](advanced/configuration.md)
