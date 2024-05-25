@@ -12,12 +12,10 @@ Although intimidating at first, once you understand the basic concept of program
 
 - An IDE[^note1] window is used to input your code. It uses a similar language to Python called Lua[^note2].
 
-> [!TIP]
 > Lua doesn't require line indentation like most languages but Axiom provides a tabbing feature to indent. 
 > 
 > There is only one built-in library[^note3] and there are currently no others.
-
-> [!IMPORTANT]
+>
 > The Script must return a block or use setBlock() to modify blocks in the world.
 
 There are many predefined variables and functions that can be used throughout the script to interact with the world. Listed below, are all variables and functions with descriptions and examples.
