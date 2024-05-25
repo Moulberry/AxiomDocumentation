@@ -9,7 +9,7 @@ The main menu bar gives users access to crucial functionality of the mod. Here y
 | Export Schematic     | Exports a selection as a schematic file |
 | Open Reference Image   | Adds a window with an image of your choice |
 | Load Bedrock Packs   | Allows you to import Bedrock Edition textures or models. |
-| Save Selection as CSV  | Exports a selection to a CSV[^note3] format. |
+| Save Selection as CSV  | Exports a selection to a CSV[^note1] format. |
 | Save Clipboard as JSON Model   | This allows you to take blocks and convert them to an item model. Models can be used in resource packs or imported into Blockbench. |
 
 ## Edit
@@ -43,11 +43,11 @@ The View submenu lets you configure options related to viewing and rendering cer
 |----------------|------------------|-------------|
 | New View       | None             | Create a new [View](views.html) |
 | Show Selection | None             | Lets you toggle the rendering of your selections |
-| Show Biomes    | Ctrl+B           | Enables the biome overlay[^note1] |
+| Show Biomes    | Ctrl+B           | Enables the biome overlay[^note2] |
 | Show Key Presses| None            | This shows your inputs including mouse clicks on the bottom right of the viewport. This can be useful for making tutorials. |
 | UI Scale       | None             | A slider ranging from 0.5 to 2. This lets you change the size of all graphical elements in the editor mode. |
 | Min Brightness | None             | A slider ranging from 0 to 1. This lets you change how dark unlit places look in your world. A value of 1 means all blocks are fully lit, this is also known as Fullbright. |
-| Fluid Opacity  | None             | A slider ranging from 0 to 1. This lets you change the opacity of transluscent[^note2] fluids to make it easier to look through. A value of 0 will make the fluid invisible. |
+| Fluid Opacity  | None             | A slider ranging from 0 to 1. This lets you change the opacity of transluscent[^note3] fluids to make it easier to look through. A value of 0 will make the fluid invisible. |
 
 ## Operations
     
@@ -89,10 +89,11 @@ The **Help** submenu contains useful information and configuration options.
 
 The dropdown contains links to information and resources. The style editor can be accessed through this window, allowing you to change and import custom colours for the UI. 
 
-[^note1]: Be aware that biomes in Minecraft are defined in a 4x4x4 grid. However, to make biomes feel more natural, vanilla warps the biomes visually. The biome overlay shows the "real" position of biomes, while biome blending and the f3 screen show the "warped" position of biomes.
-    
-[^note2]: Lava and other non-translucent fluids (if the game is modded) are not affected by opacity due to performance and mod compatibility concerns.
+## References
+[^note1]: comma-separated values (CSV) is a plaintext format that uses commas to separate values in a table-like manner.
 
-[^note3]: comma-separated values (CSV) is a plaintext format that uses commas to separate values in a table-like manner.
+[^note2]: Be aware that biomes in Minecraft are defined in a 4x4x4 grid. However, to make biomes feel more natural, vanilla warps the biomes visually. The biome overlay shows the "real" position of biomes, while biome blending and the f3 screen show the "warped" position of biomes.
+    
+[^note3]: Lava and other non-translucent fluids (if the game is modded) are not affected by opacity due to performance and mod compatibility concerns.
 
 [^note4]: [CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space) is a type of colour space that can utilise the XYZ coordinates to display colours. 

@@ -16,6 +16,7 @@ Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling r
 | Tube        |
 | Cone        |
 | Pyramid     |
+| Torus       |
 | Dodecahedron|
 | Icosahedron |
 

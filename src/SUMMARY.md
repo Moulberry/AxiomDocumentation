@@ -59,6 +59,9 @@
         - [Roughen](tools/manipulation/roughen.md)
         - [Shatter](tools/manipulation/shatter.md)
         - [Extrude](tools/manipulation/extrude.md)
+        - [Modify](tools/manipulation/modify.md)
     - [Ruler Tool](tools/ruler.md)
     - [Path Tool](tools/path.md)
-
+- [Advanced](advanced/intro.md)
+    - [Commands](advanced/commands.md)
+    - [Config](advanced/configuration.md)
