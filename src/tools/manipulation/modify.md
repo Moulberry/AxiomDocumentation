@@ -13,7 +13,7 @@ The Modify tool is designed for manipulating [selections](/tools/selection/intro
 
 ## Revolve
 
-With your selection active, two circular lines will appear, the red indicates the inner part of the revolve and the green indicates the exterior. The two lines pointing from the cursor position indicate the points where the rotation may start. The rotation always starts from the line facing a positive axis.
+With your selection active, two circular lines will appear, the red indicates the inner part of the revolve and the green indicates the exterior. The two lines pointing from the cursor position indicate the points where the rotation may start.
 
 The Revolve tool can rotate on all three axes separately and has an option to control the amount of angle the tool uses. An angle of 360 does a full loop and 180 does a half loop.  
 
