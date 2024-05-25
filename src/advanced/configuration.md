@@ -2,7 +2,7 @@
 
 Axiom has its own dedicated configuration located in `.minecraft/config/axiom` containing 3 folders and 3 files.
 
-The folders are used to store saved [Blueprints](editor/blueprints.md), [Heightmaps](editor/tools/heightmap/elevation.md) and [Tool Presets](editor/toolpresets.md) so even if the mod is removed, your assets are saved.
+The folders are used to store saved [Blueprints](/editor/blueprints.md), [Heightmaps](/editor/tools/heightmap/elevation.md) and [Tool Presets](/editor/toolpresets.md) so even if the mod is removed, your assets are saved.
 
 The files contain the more important information such as UI layout and enabled capabilities. Axiom uses a variant of JSON called HOCON (Human-Optimized Config Object Notation).
 
@@ -30,10 +30,10 @@ Below are the three files alongside their descriptions.
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | blockAttributes | Contains the currently toggled block attributes.                                                                                                                                  |
 | blueprint       | Stores the toggle to automatically refresh and a list of all used blueprint tags.                                                                                                 |
-| capabilities    | Lists all abilities and their state. Also contains the `autoSwapToCreative` boolean that controls switching to creative when opening the [context menu](builder/contextmenu.md). |
+| capabilities    | Lists all abilities and their state. Also contains the `autoSwapToCreative` boolean that controls switching to creative when opening the [context menu](/builder/contextmenu.md). |
 | keybinds        | Stores in-game keybinds and settings for the Builder Mode and camera movement.                                                                                                    |
 | toolKeybinds    | Stores all Editor keybinds for switching tools.                                                                                                                                   |
-| rendering       | Stores booleans representing the toggles in the Toolbox found in the [Context Menu](builder/contextmenu.md).                                                                     |
+| rendering       | Stores booleans representing the toggles in the Toolbox found in the [Context Menu](/builder/contextmenu.md).                                                                     |
 
 
 ### `imgui.ini`
