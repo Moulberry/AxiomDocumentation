@@ -8,7 +8,7 @@ Although intimidating at first, once you understand the basic concept of program
 
 - The Script Brush is a powerful, yet advanced tool so some knowledge of programming languages similar to Python is recommended. 
 
-- The Script Brush is similar to [Mask Scripting](/editor/toolmasks.md).
+- The Script Brush is similar to [Mask Scripting](/editor/windows/toolmasks.md).
 
 - An IDE[^note1] window is used to input your code. It uses a similar language to Python called Lua[^note2].
 

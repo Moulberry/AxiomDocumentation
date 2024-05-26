@@ -2,7 +2,7 @@
 
 Axiom has its own dedicated configuration located in `.minecraft/config/axiom` containing 3 folders and 3 files.
 
-The folders are used to store saved [Blueprints](/editor/blueprints.md), [Heightmaps](/editor/tools/heightmap/elevation.md) and [Tool Presets](/editor/toolpresets.md) so even if the mod is removed, your assets are saved.
+The folders are used to store saved [Blueprints](/editor/windows/blueprints.md), [Heightmaps](/editor/tools/heightmap/elevation.md) and [Tool Presets](/editor/toolpresets.md) so even if the mod is removed, your assets are saved.
 
 The files contain the more important information such as UI layout and enabled capabilities. Axiom uses a variant of JSON called HOCON (Human-Optimized Config Object Notation).
 
