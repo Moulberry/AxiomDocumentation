@@ -10,19 +10,19 @@ Below are the three files alongside their descriptions.
 
 ### `.axiominternal.hocon`
 
-| Key                            | Description                                                           |
-| ------------------------------ | --------------------------------------------------------------------- |
-| completedTutorials             | Lists the tools that have shown their short tutorial.                 |
-| customDowngradeSuggestions     | Lists the downgrades suggested by Axiom.                              |
-| globalScale                    | A float representing the [Editor](editor/intro.md) UI Scale.         |
-| lastTranslationCount           | A value determining the amount of translations.                       |
-| openEditorWindowTypes          | A list of open windows in the editor.                                 |
-| rootEditorPalette              | The default block palette for the editor mode.                        |
-| savedCustomTheme               | Stores the currently active theme as a string.                        |
-| showCloseWindowButton          | A boolean to toggle the "x" to close windows.                         |
-| showNon90DegreeRotationWarning | A boolean to toggle the warning before applying non-90-degree angles. |
-| showToolMaskOpenWarning        | A boolean to toggle the warning when using tool masks.                |
-| shownIntroduction              | A boolean representing whether the introduction has been completed.   |
+| Key                            | Description                                                                       |
+| ------------------------------ | --------------------------------------------------------------------------------- |
+| completedTutorials             | Lists the tools that have shown their short tutorial.                             |
+| customDowngradeSuggestions     | Lists the downgrades suggested by Axiom.                                          |
+| globalScale                    | A float representing the [Editor](editor/intro.md) UI Scale.                      |
+| lastTranslationCount           | A value determining the amount of translations.                                   |
+| openEditorWindowTypes          | A list of open windows in the editor.                                             |
+| rootEditorPalette              | The default block palette for the editor mode.                                    |
+| savedCustomTheme               | Stores the currently active [Theme](/editor/windows/intro.md#Themes) as a string. |
+| showCloseWindowButton          | A boolean to toggle the "x" to close windows.                                     |
+| showNon90DegreeRotationWarning | A boolean to toggle the warning before applying non-90-degree angles.             |
+| showToolMaskOpenWarning        | A boolean to toggle the warning when using tool masks.                            |
+| shownIntroduction              | A boolean representing whether the introduction has been completed.               |
 
 ### `.axiom.hocon`
 
@@ -37,5 +37,7 @@ Below are the three files alongside their descriptions.
 
 
 ### `imgui.ini`
+
+This file stores [windows](/editor/windows/intro.md) and their positions.
 
 This file is generally not meant to be modified, hence why it uses a different file format. However, if you're having an issue with a specific window that you can't recover, you can either edit or delete this file to fix the issue.
