@@ -16,8 +16,8 @@ The default camera controls are:
 - Arcball Camera: Ctrl + Left Click
 - Pan Camera: Ctrl + Right Click
 
-> If you wish to invert the left click rotation, toggle Help > Keybinds > Invert Camera Rotate
+The flight speed can be changed using the slider at the very bottom of the Editor UI.
 
-Other keybinds can be found in Help > Keybinds, where they can also be rebound
+Keybinds can be found in the [Main Menu Bar](mainmenubar.md) as 'Keybinds'
 
 If you'd prefer a default key layout reminiscent of Blender, use Load Default > Blender-like

@@ -6,6 +6,8 @@ The first unqiue option is the toggle for the ‘3D’ setting. This allows the 
 
 Next, we have the scale option, which adjusts the size of the noise relative to the block grid. A larger scale means that the noise pattern is spread over a larger area of blocks.
 
+Finally, the Anisotropic option enables control of scale on each axis individually, allowing for a stretched effect. 
+
 ## Noises
 
 There are a few shared settings across the different noises. The common options between these noises are listed below, with sepcific settings for each noise described in their respective sections.
