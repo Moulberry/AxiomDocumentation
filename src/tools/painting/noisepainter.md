@@ -55,6 +55,8 @@ The section beneath the noise configuration allows you to specify the blocks use
 
 Clicking the '+' sign adds a new block. Clicking on an existing block allows you to select and add different blocks to your noise pattern. You can also drag and drop palettes and active blocks onto the blocks section.
 
+To modify the property of a block, right-click on the block icon and a menu will appear, allowing you to toggle and set different properties.
+
 ## Preview
 
 Lastly, beneath the settings, there are three windows to aid in visualizing the noise pattern, cumulative distribution, and probability density:

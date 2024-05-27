@@ -1,6 +1,6 @@
 # Stack
 
-Stack allows you to copy blocks in a row or grid
+Stack allows you to copy blocks and entities in a row or grid
 
 ## Selecting a region
 Refer to [Move](move.md)

@@ -1,6 +1,6 @@
 # Move
 
-The move tool allows you to adjust the position of blocks in a cuboid region
+The move tool allows you to adjust the position of blocks and entities in a cuboid region
 
 ## Selecting a region
 
@@ -17,7 +17,7 @@ See below for a step-by-step demonstration. The initial selection is made with a
 
 Once you have a selection, simply start scrolling to nudge the blocks in the direction you are looking
 
-The blocks can be flipping using Ctrl+F, and rotated using Ctrl+R
+The blocks can be flipped using Ctrl+F, and rotated using Ctrl+R
 
 To confirm the movement, press Right Click
 
