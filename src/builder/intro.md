@@ -13,6 +13,12 @@ To the right of the hotbar, you can find the Builder Tools. These tools are very
 To start using a Builder Tool, scroll to the 10th slot or press 0.
 To switch to a different Builder Tool, hold Left Alt and then scroll.
 
+The three main keybinds for the Builder Tools are left-click, right-click and middle-click. Middle-click has similar a functionality to left and right-click but instead of selecting the corners, middle-click is used to select the faces. 
+
+When working with a selection, useful information such as offset and size is displayed above the hotbar.
+
+Holding either x, y or z while scrolling to move the placement will lock it to that direction.
+
 The tools that are currently available in this section are:
 - [Move](/builder/move.md)
 - [Clone](/builder/clone.md)
@@ -24,3 +30,9 @@ The tools that are currently available in this section are:
 
 ![Builder Tools](/img/BuilderToolsOverview.png)
 
+
+## Gameplay
+
+Using Ctrl + C while looking at a block will copy its exact nbt state.
+
+When searching in the creative inventory, pressing enter will add the first listed block to your current hotbar slot.

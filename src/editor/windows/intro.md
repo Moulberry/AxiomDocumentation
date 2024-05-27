@@ -22,6 +22,12 @@ To dock a window, drag the window and hover it over one of the eight blue shapes
 
 To undock a window, drag it by the title and it will undock.
 
-## Themes
+## Other Windows
+
+### Themes
 
 Themes can be used to further customise the Editor UI with custom colours. To edit the current theme, click `Style Editor` under `Help` in the [Main Menu Bar](editor/mainmenubar.md). Themes can be imported and exported from the clipboard. 
+
+### Select Block
+
+The select block window is essentially the creative inventory for the Editor Mode. You can either search by block name or block ID.

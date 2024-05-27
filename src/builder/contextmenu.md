@@ -10,6 +10,8 @@ This feature aids in organization, allowing you to swap between building materia
 
 You can reorganize your hotbars by clicking items like you would in any other inventory. The fastest way to fill a hotbar is to open an empty bar and fill it using the creative inventory or pick block as you normally would.
 
+Clicking the red 'x' below the flight speed will remove all saved hotbars except for the current one.
+
 ### Capabilities
 On the left-hand side you can find a number of buttons for toggling building **Capabilities**. A raised or lighter background means the Capability is disabled, while a depressed or darker background means the Capability is enabled.
 

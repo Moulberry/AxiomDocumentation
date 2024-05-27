@@ -13,3 +13,5 @@ Here's the information you'll see:
 - Bounding Size: The size of the box needed to draw around all the points.
 - Yaw (Only visible with two points): The yaw of the line between two points.
 - Pitch (Only visible with two points): The pitch of the line between two points.
+
+> Tip: Ruler measurements are permanantely visible even outside the editor, so make sure to remove them once you're done.

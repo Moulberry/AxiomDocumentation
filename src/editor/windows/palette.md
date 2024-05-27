@@ -17,3 +17,5 @@ You can also add to the category by dragging and dropping blocks from the **Rece
 ## Using Presets in Other Tools
 
 Tools that paint more than one block type like the [Noise Painter](/tools/painting/noisepainter.md) support dragging and dropping presets into them.
+
+> Tip: Dragging and dropping palettes on a block will replace all adjacent blocks of the same type with random blocks from the palette.
