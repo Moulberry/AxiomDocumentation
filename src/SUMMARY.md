@@ -13,6 +13,7 @@
     - [Setup Symmetry](builder/setupsymmetry.md)
     - [Display Entities](builder/displayentities.md)
     - [Marker Entities](builder/marker.md)
+    - [Edit Block Attributes](builder/blockattributes.md)
 - [Capabilities](capabilities/intro.md)
     - [Tinker](capabilities/tinker.md)
     - [No Updates](capabilities/noupdates.md)

@@ -10,25 +10,25 @@ Below are the three files alongside their descriptions.
 
 ### `.axiominternal.hocon`
 
-| Key                            | Description                                                                       |
-| ------------------------------ | --------------------------------------------------------------------------------- |
-| completedTutorials             | Lists the tools that have shown their short tutorial.                             |
-| customDowngradeSuggestions     | Lists the downgrades suggested by Axiom.                                          |
-| globalScale                    | A float representing the [Editor](editor/intro.md) UI Scale.                      |
-| lastTranslationCount           | A value determining the amount of translations.                                   |
-| openEditorWindowTypes          | A list of open windows in the editor.                                             |
-| rootEditorPalette              | The default block palette for the editor mode.                                    |
-| savedCustomTheme               | Stores the currently active [Theme](/editor/windows/intro.md#Themes) as a string. |
-| showCloseWindowButton          | A boolean to toggle the "x" to close windows.                                     |
-| showNon90DegreeRotationWarning | A boolean to toggle the warning before applying non-90-degree angles.             |
-| showToolMaskOpenWarning        | A boolean to toggle the warning when using tool masks.                            |
-| shownIntroduction              | A boolean representing whether the introduction has been completed.               |
+| Key                            | Description                                                                            |
+| ------------------------------ | -------------------------------------------------------------------------------------- |
+| completedTutorials             | Lists the tools that have shown their short tutorial.                                  |
+| customDowngradeSuggestions     | Lists the downgrades suggested by Axiom.                                               |
+| globalScale                    | A float representing the [Editor](editor/intro.md) UI Scale.                           |
+| lastTranslationCount           | A value determining the amount of translations.                                        |
+| openEditorWindowTypes          | A list of open windows in the editor.                                                  |
+| rootEditorPalette              | The default block palette for the editor mode.                                         |
+| savedCustomTheme               | Stores the currently active [Theme](/editor/windows/intro.md#Themes) as a string.      |
+| showCloseWindowButton          | A boolean to toggle the "x" to close windows.                                          |
+| showNon90DegreeRotationWarning | A boolean to toggle the warning before applying non-90-degree angles.                  |
+| showToolMaskOpenWarning        | A boolean to toggle the warning when using [Tool Masks](/editor/windows/toolmasks.md). |
+| shownIntroduction              | A boolean representing whether the introduction has been completed.                    |
 
 ### `.axiom.hocon`
 
 | Key             | Description                                                                                                                                                                       |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockAttributes | Contains the currently toggled block attributes.                                                                                                                                  |
+| blockAttributes | Contains the currently toggled [Block Attributes](/builder/blockattributes.md).                                                                                                                                  |
 | blueprint       | Stores the toggle to automatically refresh and a list of all used blueprint tags.                                                                                                 |
 | capabilities    | Lists all abilities and their state. Also contains the `autoSwapToCreative` boolean that controls switching to creative when opening the [context menu](/builder/contextmenu.md). |
 | keybinds        | Stores in-game keybinds and settings for the Builder Mode and camera movement.                                                                                                    |
