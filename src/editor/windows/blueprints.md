@@ -17,3 +17,5 @@ The blueprint files themselves can be sent to others who can then also use them 
 ## Blueprint Browser
 
 Once you have Blueprints, you can view them in the **Blueprint Browser**. You'll be able to see thumbnails for all of your blueprints, as well as perform searches or filter by tags. Clicking a blueprint will 'open' it and place the blocks into your [clipboard](blocks_and_clipboard.md#clipboard).
+
+> Tip: You can go back and refresh by clicking the appropriate button next to the seach box.
