@@ -84,7 +84,7 @@ The **Editing Menu** has many useful features. Listed below are all features wit
 | Copy Coordinates       | Copies the exact coordinates to the clipboard.                                                                                                                                                                                                                                                                 |
 | Copy Transform Command | Copies the transformation to the clipboard as a command.                                                                                                                                                                                                                                                       |
 
-## References
+## Notes
 
 [^note1]: [Display Entities](https://minecraft.wiki/w/Display) are a vanilla Minecraft feature.
 

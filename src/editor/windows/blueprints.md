@@ -18,6 +18,14 @@ The blueprint files themselves can be sent to others who can then also use them 
 
 ## Blueprint Browser
 
-Once you have Blueprints, you can view them in the **Blueprint Browser**. You'll be able to see thumbnails for all of your blueprints, as well as perform searches or filter by tags. Clicking a blueprint will 'open' it and place the blocks into your [clipboard](blocks_and_clipboard.md#clipboard).
+Once you have Blueprints, you can view them in the **Blueprint Browser**. You'll be able to see thumbnails for all of your blueprints, as well as perform searches or filter by tags. Clicking a blueprint will 'open' it load into your [clipboard](clipboard.md).
 
 > Tip: You can go back and refresh by clicking the appropriate button next to the seach box.
+
+## File Format
+
+Blueprints are stored as `.bp` files in the [Configuration](/advanced/configuration.md). The blueprint file itself is a GZ[^note1] and can be opened in programs such as 7zip to reveal the NBT file inside. The thumbnail, author and tags are also stored within the `.bp` file. 
+
+## Notes
+
+[^note1]: [GZ](https://en.wikipedia.org/wiki/Gzip) is a compressed file format.

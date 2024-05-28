@@ -36,6 +36,6 @@ The Rotate/Scale window allows for rotating and resizing by any amount. This win
 
 > Tip: Left-clicking the 'Empty' clipboard icon opens up the [Blueprint Browser](blueprints.md).
 
-## References
+## Notes
 
 [^note1]: For versions 3.0.0 and below, the options will appear inside the clipboard window.

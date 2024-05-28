@@ -10,7 +10,7 @@ The **Time** submenu lets you change things about the time in the world. You can
     
 The **Player** submenu lets you adjust properties relating to the player entity:
     
-- **Player Invulnerability** Prevents all forms of death, including void damage and /kill.
+- **Player Invulnerability** Toggles the [Invulnerability Command](/advanced/commands.md#axiomPlayerInvulnerability).
 - **Trample Farmland** Disabling this property prevents farmland from being trampled.
 - **Mob Spawning** This property corresponds to the vanilla "doMobSpawning" gamerule.
 

@@ -26,6 +26,24 @@ Commands are essential for management and debugging.
 
 - Returns Axiom's status and information on how to resolve issues.
 
+## Axiom Gamerule Commands
+
+### axiomDoBlockDrops
+
+- Unlike the [doTileDrops](https://minecraft.wiki/w/Game_rule) gamerule, Axiom's gamerule covers all blocks.
+
+### axiomDoBlockGravity
+
+- When False, all gravity affected blocks like sand will never update regardless of the interaction.
+
+### axiomDoTrampleFarmland
+
+- When False, farmland cannot be trampled by any entity.
+
+### axiomPlayerInvulnerability
+
+- Prevents all forms of death, including void damage and /kill.
+
 ## Compatible commands
 
 `//pos1` and `//pos2` are part of Axiom, but are intended to be used alongside WorldEdit.

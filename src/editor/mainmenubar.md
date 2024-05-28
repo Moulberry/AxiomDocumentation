@@ -89,7 +89,8 @@ The **Help** submenu contains useful information and configuration options.
 
 The dropdown contains links to information and resources. The [style editor](windows/themes.md) can be accessed through this window, allowing you to change and import custom colours for the UI. 
 
-## References
+## Notes
+
 [^note1]: comma-separated values (CSV) is a plaintext format that uses commas to separate values in a table-like manner.
 
 [^note2]: Be aware that biomes in Minecraft are defined in a 4x4x4 grid. However, to make biomes feel more natural, vanilla warps the biomes visually. The biome overlay shows the "real" position of biomes, while biome blending and the f3 screen show the "warped" position of biomes.

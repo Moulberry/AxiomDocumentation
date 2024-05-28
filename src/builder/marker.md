@@ -6,6 +6,6 @@
 
 Right-clicking the marker gizmo will open a menu, allowing you to input custom NBT for the marker.
 
-## References
+## Notes
 
 [^note1]: [Display Entities Wiki](https://minecraft.wiki/w/Marker).

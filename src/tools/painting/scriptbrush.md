@@ -172,7 +172,7 @@ end
 
 </details>
 
-## References
+## Notes
 
 [^note1]: An integrated development environment (IDE) is a software application that provides comprehensive facilities for software development.
 
