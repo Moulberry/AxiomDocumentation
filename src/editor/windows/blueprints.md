@@ -2,7 +2,7 @@
 
 Blueprints are a system for saving and loading prefabricated assets. They are similar to schematics, but with a different structure optimized for searching and viewing. 
 
-## Creating a blueprint
+## Creating a Blueprint
 
 A **Blueprint** can be created by having content in your clipboard and pressing Ctrl+P. This brings up the **Create Blueprint** menu. In here you can do a few things, you can name your blueprint, add authors, tags and rotate your blueprint to generate a thumbnail to easily recognize it later.
 
@@ -12,19 +12,23 @@ When you save a blueprint a file system dialog opens up native to your operating
 
 > Tip: Use tab to navigate the create blueprint window faster.
 
-## Sharing blueprints
+## Sharing Blueprints
 
 The blueprint files themselves can be sent to others who can then also use them in Axiom if they place the files in the designated file location. The blueprint folder supports nested directories as well, meaning that you can for example, put all your trees in one folder under the blueprints folder.
 
 ## Blueprint Browser
 
-Once you have Blueprints, you can view them in the **Blueprint Browser**. You'll be able to see thumbnails for all of your blueprints, as well as perform searches or filter by tags. Clicking a blueprint will 'open' it load into your [clipboard](clipboard.md).
+Once you have blueprints, you can view them in the **Blueprint Browser**. You'll be able to see thumbnails for all of your blueprints, as well as perform searches or filter by tags. Clicking a blueprint will 'open' it load into your [clipboard](clipboard.md).
 
 > Tip: You can go back and refresh by clicking the appropriate button next to the seach box.
 
 ## File Format
 
 Blueprints are stored as `.bp` files in the [Configuration](/advanced/configuration.md). The blueprint file itself is a GZ[^note1] and can be opened in programs such as 7zip to reveal the NBT file inside. The thumbnail, author and tags are also stored within the `.bp` file. 
+
+## Multiplayer
+
+On [Multiplayer](/multiplayer/intro.md), blueprints can be saved to and downloaded from the server rather than saving to your device. This means everyone on the server can use your saved blueprint.
 
 ## Notes
 

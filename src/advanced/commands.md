@@ -8,11 +8,11 @@ Commands are essential for management and debugging.
 
 ### /axiomenablecheats
 
-- Forces the world to have cheats enabled, even if they are disabled.
+- Forces the world to have cheats enabled, even if they are disabled. This is not available in [Multiplayer](/multiplayer/intro.md).
 
 ### /axiomhandshake
 
-- Tests the connection by emulating a player join on a server.
+- Tests the connection by emulating a player join on a server. This only works on [Multiplayer](/multiplayer/intro.md).
 
 ### /axiomintro
 
@@ -27,6 +27,8 @@ Commands are essential for management and debugging.
 - Returns Axiom's status and information on how to resolve issues.
 
 ## Axiom Gamerule Commands
+
+These are some extra commands for controlling the world and its properties. These are not available in [Multiplayer](/multiplayer/intro.md).
 
 ### axiomDoBlockDrops
 
@@ -47,3 +49,9 @@ Commands are essential for management and debugging.
 ## Compatible commands
 
 `//pos1` and `//pos2` are part of Axiom, but are intended to be used alongside WorldEdit.
+
+## Multiplayer Commands
+
+### /axiompaperdebug [permission]
+
+- Used to check whether the player has the provided [permission](/multiplayer/permissions.md) and returns true/false. 
