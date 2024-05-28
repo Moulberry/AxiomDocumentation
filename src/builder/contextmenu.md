@@ -55,3 +55,7 @@ The Toolbox is located under the flight speed slider in the context menu and con
 | Type replace               | The Type Replace toggle affects the [Replace capability](/capabilities/replacemode.md). Replacing blocks with multiple variants such as stairs and slabs with another multi-variant block will change that block to the variant regardless of what block it is. |
 | Flight direction           | Flight Direction changes the way you fly in creative mode. The vanilla flight mode is 'Horizontal' and the Axiom version is called 'Camera'. The camera mode allows you to fly in all directions using the direction of the camera.                             |
 | Flight momentum            | The flight momentum affects how long it takes to change speeds while flying. A higher momentum means a longer delay until you reach full speed, resulting in a smoother flight.                                                                                 |
+
+### Clear
+
+This button clears all saved hotbars excluding your current one.
