@@ -4,21 +4,29 @@ The Shape Tool lets you make geometric shapes with your active block. Since thes
 
 Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling rotation using the gizmo, you can also alter the angle sliders for yaw, pitch, and roll in the 'advanced options' dropdown. Plus, there are options for making the shapes hollow, placing only the outer layer.
 
-## List of Shapes
+## Category
 
-| Shapes      |
-|-------------|
-| Sphere      |
-| Cuboid      |
-| Octahedron  |
-| Supersphere |
-| Cylinder    |
-| Tube        |
-| Cone        |
-| Pyramid     |
-| Torus       |
-| Dodecahedron|
-| Icosahedron |
+| Category  | Description                              |
+| --------- | ---------------------------------------- |
+| Solid     | Creates a solid 3D shape.                |
+| Flat      | Creates a flat 2D shape.                 |
+| Modelling | Creates a surface using multiple points. |
+
+## Shapes
+
+| Shapes       | Flat Shapes        | Modelling Shapes |
+| ------------ | ------------------ | ---------------- |
+| Sphere       | Disk               | Convex Hull      |
+| Cuboid       | Plane              | Smart Surface    |
+| Octahedron   | Regular Polygon    | Triangle Strip   |
+| Supersphere  | Superellipse       | Triangle Fan     |
+| Cylinder     | Archimedean Spiral |                  |
+| Tube         |                    |                  |
+| Cone         |                    |                  |
+| Pyramid      |                    |                  |
+| Torus        |                    |                  |
+| Dodecahedron |                    |                  |
+| Icosahedron  |                    |                  |
 
 ## Options
 

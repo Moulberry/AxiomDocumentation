@@ -1,4 +1,4 @@
-# Setup Symmetry
+# ![](/img/buildertools/setupSymmetry.png) Setup Symmetry
 
 Setup Symmetry allows you to position and configure a 'symmetry node'. Once the node is set, you can start placing blocks with symmetry.
 
