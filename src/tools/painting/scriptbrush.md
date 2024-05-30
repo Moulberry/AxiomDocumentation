@@ -148,12 +148,16 @@ flatness = $float(Bowl Flatness,0.8,0.1,2.5)$
 tolerance = (scale*10)*flatness
 block=$blockState(Block)$
 
+function isTolerable(a, b, tol)
+    return math.abs(a - b) <= tol
+end
+
 for DistX = -scale, scale do
     for DistY = -scale, scale do
         for DistZ = -scale, scale do
             local formulaL = DistX^2 + DistY^2 + (DistZ^1.5)*-(flatness*10)^2
             local formulaR = 0
-            if (formulaL - formulaR) <= tolerance then
+            if isTolerable(formulaL, formulaR, tolerance) then
                 setBlock(x + DistX, y + DistZ, z + DistY, block)
             end
         end
