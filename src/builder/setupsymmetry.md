@@ -29,3 +29,7 @@ Below is a demonstration of the symmetry tool.
 </video>
 
 > Tip: Nodes will be removed if the player is outside the 256 block radius.
+
+## Video Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aLMYVmhwGYw?si=jw0BQ_avTwVzuaWK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

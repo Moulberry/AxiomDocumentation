@@ -51,3 +51,7 @@ Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling r
 | Pivot               | Switch between centred gizmo or base gizmo position |
 
 **Keep Existing** Disables the overriding of other blocks when placing the shape. 
+
+## Video Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/li1XwgT6nJU?si=UkvO-zk8ZLXfJRBm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

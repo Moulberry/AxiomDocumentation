@@ -16,3 +16,7 @@ The **Stamp Tool** is a [Blueprint](/editor/windows/blueprints.md) placement too
 To load blueprints into the **Stamp Tool**, click the 'Add Blueprint' button. This will open your [Blueprint Browser](/editor/windows/blueprints.md#Blueprint_Browser) and click on the blueprint you'd like to add. To add multiple blueprints, you can either [Dock](/editor/windows/intro.md#Docking) the Blueprint Browser or use Shift + Click to avoid closing the window.
 
 Blueprints have their own offset and chance. If the Base of your blueprint should be lower, you can edit it here. If you want less or more of a specific blueprint, you can also change that here. 
+
+## Video Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vf4urSRSkdw?si=BQsjUDd7ZMWs4oNV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

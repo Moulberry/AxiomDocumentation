@@ -58,3 +58,7 @@ Similar to the [Script Brush](/tools/painting/scriptbrush.md), the mask scriptin
 | withBlockProperty(block,"property=value") | Used to return or set a block with a block property.                                              | withBlockProperty(blocks.oak_slab,"waterlogged=true")                          |
 | getBlockProperty(block,"property")        | Returns the value of the provided block property.                                                 | if getBlockProperty(blocks.oak_slab,"waterlogged")==true                       |
 | setBlock(x,y,z,block)                     | Set an additional block at a given position.                                                      | setBlock(x,y,z,blocks.stone)                                                   |
+
+## Video Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8KhqvZ5Zr1k?si=qg84PZ6OeGP0kwWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

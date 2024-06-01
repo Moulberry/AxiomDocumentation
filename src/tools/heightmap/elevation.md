@@ -13,3 +13,7 @@ The **Elevation Tool** can raise and lower pre-existing terrain. Its main featur
 | Rate / Amount  | These determine how many blocks are applied at a time.                                                                                                                                                                                                              |
 | Falloff        | The falloff determines how the elevation is applied around the center.                                                                                                                                                                                              |
 | Load Heightmap | Similar to falloff, heightmaps allow for further modification to the elevation. Pressing "Load Heightmap" will open an explorer window prompting you to choose an image. When using a coloured image, the image will automatically be converted to black and white. |
+
+## Video Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AhxGxsOEyZo?si=1CXPQ00a4KA4LOI9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
