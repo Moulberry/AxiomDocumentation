@@ -28,7 +28,7 @@ The tables below cover the settings for the **Create Display** Entity menu.
 | Setting             | Description                                                                                                                                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Text                | The black box provides space to enter text for the text display.                                                                                              |
-| Background Color    | The background colour determines the colour surrounding the text. The first two hexadecimal values represent the opacity while the rest represent the colour. |
+| Background Color    | The background colour determines the colour surrounding the text. The colour fomat for the background colour is ARGB in Hexadecimal. |
 | Line Width          | The line width determines the amount of space required to start a new line.                                                                                   |
 | Alignment           | The alignment determines the offset relative to the gizmo.                                                                                                    |
 | Shadow              | Adds a shadow effect to the text.                                                                                                                             |
