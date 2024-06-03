@@ -22,14 +22,6 @@ Once you have blueprints, you can view them in the **Blueprint Browser**. You'll
 
 > Tip: You can go back and refresh by clicking the appropriate button next to the seach box.
 
-## File Format
-
-Blueprints are stored as `.bp` files in the [Configuration](/advanced/configuration.md). The blueprint file itself is a GZ[^note1] and can be opened in programs such as 7zip to reveal the NBT file inside. The thumbnail, author and tags are also stored within the `.bp` file. 
-
 ## Multiplayer
 
-On [Multiplayer](/multiplayer/intro.md), blueprints can be saved to and downloaded from the server rather than saving to your device. This means everyone on the server can use your saved blueprint.
-
-## Notes
-
-[^note1]: [GZ](https://en.wikipedia.org/wiki/Gzip) is a compressed file format.
+On multiplayer, blueprints can be saved to and downloaded from the server rather than saving to your device. This means everyone on the server can use your saved blueprint.

@@ -16,16 +16,5 @@ To open/close the [Editor Mode](editor/intro.md), press Right Shift
 
 These keybinds can be adjusted in Minecraft's controls menu (Esc > Options > Controls)
 
-## Latest Update 
 
-Update 3.0.0 introduced the [Script Brush](tools/painting/scriptbrush.md). This tool has been on the todo list for months but it's finally here! This unique tool introduces many new possibilities as it allows users to create their own brush with its own unique functionality.
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0czfydvLLOc?si=qDzbjg263Izi_6uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-There is another new operation called 'Export Clipboard to JSON Model' and it can be found under the Operations menu in the [Main Menu Bar](editor/mainmenubar.md). Alongside this, some smaller features such as the '/axiomtogglecapability' [Command](advanced/commands.md) and some bug fixes.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PWFBYJeqrlk?si=aPHQLeuJHM71qdeK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-###### Last Documentation Update: 29/05/24
+###### Last Documentation Update: 03/06/24
