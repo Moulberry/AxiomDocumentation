@@ -1,24 +1,61 @@
-## Builder Context Menu
-The features for builder mode are accessed in the builder context menu. By default, holding down Left Alt opens the menu.
+# Context Menu
+The features for builder mode are accessed in the builder context menu. By default, holding down `left alt` opens the menu.
 
-![Builder Context Menu](../img/AltMenuOverview.png)
+![Builder Context Menu](/img/AltMenuOverview.png)
 
 ### Hotbar Swapper
-The hotbar swapper is the most prominent feature you’ll notice when you first open the builder context menu. While the menu is open you can use your scroll wheel or number keys to quickly swap to another hotbar.
 
-This feature aids in organization, allowing you to swap between building materials without needing to open your inventory and move things around.
+The Hotbar Swapper is a better version of the vanilla “Saved Hotbars” which are stored in the creative inventory and are loaded using keybinds. The Hotbar Swapper is in the centre of the Context Menu and has 9 saveable hotbars. 
 
-You can reorganize your hotbars by clicking items like you would in any other inventory. The fastest way to fill a hotbar is to open an empty bar and fill it using the creative inventory or pick block as you normally would.
+To save items to the hotbar swapper, use the scroll wheel while the context menu is open to select the hotbar you would like to save to.
+
+Then close the context menu and fill your hotbar with the items you want. When you’re done, you can scroll to the next hotbar you would like to modify. Another way to modify hotbars would be to click on an item with left-click and drop it into another position with left-click.
+
+> Note: Hotbars are not transferred between worlds
+
+Loading saved Hotbars is simple. Just use the scroll wheel in the context menu to select the hotbar you’d like to use. Then close the context menu and the blocks and items you previously saved should be loaded into your hotbar.
 
 ### Capabilities
-On the left-hand side you can find a number of buttons for toggling building **Capabilities**. A raised or lighter background means the Capability is disabled, while a depressed or darker background means the Capability is enabled.
+Capabilities allow you to change the way you place, destroy and modify blocks. When a capability is enabled, the button will be tinted green. Disabled capabilities are represented as greyed. 
 
-Documentation for Capabilities can be found [here](/capabilities/intro.md)
+Further information on the individual capabilities can be found [here](/capabilities/intro.md).
 
-### Gamemode Switchers
-Above the hotbar swappers are 3 buttons for quickly swapping to other gamemodes. Using these buttons can be slightly faster than messing around with F3+F4 or chat commands.
+### Create Display Entity
 
-> Tip: Pressing Left Alt while not in creative mode will put you into creative mode, this can be useful if you are in spectator mode and want to swap back to place some blocks. 
+Allows for creating and manipulating display entities. Read more [here](displayentities.md).
+
+### Edit Block Attributes
+
+Provides settings that alter gameplay. Read more [here](blockattributes.md).
+
+### Gamemode Switcher
+
+Using these buttons can be slightly faster than messing around with F3+F4 or chat commands.
+
+Pressing Left Alt while in another gamemode will put you into creative mode, this can be useful if you are in spectator mode and want to quickly switch to creative. This can be disabled in the [config](/advanced/configuration.md) as `autoSwapToCreative`.
 
 ### Flight Speed
-On the right-hand side you can find a slider which allows you to quickly change your flight speed, up to 1000% or 10x faster.
+
+The Flight Speed is represented as a vertical slider on the right side of the context menu. The current speed is represented as a percentage above the slider. 100% is normal flight speed and 200% would be two times as fast. The limit is 999%.
+
+To change the flight speed, use left-click on the slider to select a specific speed. Dragging the slider and clicking the plus and minus symbols are other ways you can change the flight speed.
+
+### Toolbox
+
+The Toolbox is located under the flight speed slider in the context menu and contains useful settings for building. Listed below are all Toolbox settings alongside their description.
+
+| Setting                    | Description                                                                                                                                                                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Show marker entity gizmos  | Toggles visualisation of [Marker Entity](marker.md) [Gizmos](/editor/gizmos.md).                                                                                                                                                                                |
+| Show display entity gizmos | Toggles visualisation of [Display Entitiy](displayentities.md) [Gizmos](/editor/gizmos.md).                                                                                                                                                                     |
+| Show key hints             | Toggles the ability to view currently pressed keys at the bottom right corner of the screen. This can be useful for debugging or tutorials.                                                                                                                     |
+| Infinite reach limit       | Sets the range for the [Infinite Reach capability](/capabilities/intro.md). The slider ranges from 5 to 100 and is set to infinite by default.                                                                                                                  |
+| Liquid opacity             | Sets the opacity of water. 100% normal opacity and 0% results in water being invisible.                                                                                                                                                                         |
+| Minimum Brightness         | Sets the minimum brightness. 0% is default and 100% removes all shadows.                                                                                                                                                                                        |
+| Type replace               | The Type Replace toggle affects the [Replace capability](/capabilities/replacemode.md). Replacing blocks with multiple variants such as stairs and slabs with another multi-variant block will change that block to the variant regardless of what block it is. |
+| Flight direction           | Flight Direction changes the way you fly in creative mode. The vanilla flight mode is 'Horizontal' and the Axiom version is called 'Camera'. The camera mode allows you to fly in all directions using the direction of the camera.                             |
+| Flight momentum            | The flight momentum affects how long it takes to change speeds while flying. A higher momentum means a longer delay until you reach full speed, resulting in a smoother flight.                                                                                 |
+
+### Clear
+
+This button clears all saved hotbars excluding your current one.

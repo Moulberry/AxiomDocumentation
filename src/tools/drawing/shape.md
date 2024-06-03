@@ -4,21 +4,29 @@ The Shape Tool lets you make geometric shapes with your active block. Since thes
 
 Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling rotation using the gizmo, you can also alter the angle sliders for yaw, pitch, and roll in the 'advanced options' dropdown. Plus, there are options for making the shapes hollow, placing only the outer layer.
 
-## List of Shapes
+## Category
 
-| Shapes      |
-|-------------|
-| Sphere      |
-| Cuboid      |
-| Octahedron  |
-| Supersphere |
-| Cylinder    |
-| Tube        |
-| Cone        |
-| Pyramid     |
-| Torus       |
-| Dodecahedron|
-| Icosahedron |
+| Category  | Description                              |
+| --------- | ---------------------------------------- |
+| Solid     | Creates a solid 3D shape.                |
+| Flat      | Creates a flat 2D shape.                 |
+| Modelling | Creates a surface using multiple points. |
+
+## Shapes
+
+| Shapes       | Flat Shapes        | Modelling Shapes |
+| ------------ | ------------------ | ---------------- |
+| Sphere       | Disk               | Convex Hull      |
+| Cuboid       | Plane              | Smart Surface    |
+| Octahedron   | Regular Polygon    | Triangle Strip   |
+| Supersphere  | Superellipse       | Triangle Fan     |
+| Cylinder     | Archimedean Spiral |                  |
+| Tube         |                    |                  |
+| Cone         |                    |                  |
+| Pyramid      |                    |                  |
+| Torus        |                    |                  |
+| Dodecahedron |                    |                  |
+| Icosahedron  |                    |                  |
 
 ## Options
 
@@ -43,3 +51,7 @@ Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling r
 | Pivot               | Switch between centred gizmo or base gizmo position |
 
 **Keep Existing** Disables the overriding of other blocks when placing the shape. 
+
+## Video Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/li1XwgT6nJU?si=UkvO-zk8ZLXfJRBm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

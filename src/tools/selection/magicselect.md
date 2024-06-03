@@ -17,3 +17,5 @@ The **Limit** option is a slider which can be configured to set how many blocks 
 The **Range** option is a slider which lets you set how far the algorithm should look for any adjacent blocks. This lets the tool ‘jump the gap’ between two blocks. The range simply represents how far it can look before cutting off. For example a bushy tree might have two or more blocks of air between it’s leaves and logs. This lets you select all the leaves that are on the tree regardless of the fact that there are air blocks between two branches with leaves.
 
 The **Surface Only** option is a toggle which makes the tool only select the blocks on the surface of the selection or, equivalently, all blocks adjacent to air or the ‘outside’.
+
+> Tip: You can drag-click across multiple block types to select more than one block type.

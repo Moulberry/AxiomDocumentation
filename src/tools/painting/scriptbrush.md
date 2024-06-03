@@ -8,16 +8,14 @@ Although intimidating at first, once you understand the basic concept of program
 
 - The Script Brush is a powerful, yet advanced tool so some knowledge of programming languages similar to Python is recommended. 
 
-- The Script Brush is similar to [Mask Scripting](/editor/toolmasks.md).
+- The Script Brush is similar to [Mask Scripting](/editor/windows/toolmasks.md).
 
 - An IDE[^note1] window is used to input your code. It uses a similar language to Python called Lua[^note2].
 
-> [!TIP]
-> Lua doesn't require line indentation like most languages but Axiom provides a tabbing feature to indent. 
-> 
-> There is only one built-in library[^note3] and there are currently no others.
+- Lua doesn't require line indentation like most languages but Axiom provides a tabbing feature to indent. 
+ 
+- There is only one built-in library[^note3] and there are currently no others.
 
-> [!IMPORTANT]
 > The Script must return a block or use setBlock() to modify blocks in the world.
 
 There are many predefined variables and functions that can be used throughout the script to interact with the world. Listed below, are all variables and functions with descriptions and examples.
@@ -58,10 +56,7 @@ Template Variables are not shown in the help text. Template Variables are used t
 
 # Code Examples
 
-These four code examples range from a novice user all the way to a professional in terms of difficulty. Each script provides a description and a breakdown of how the script works.
-
-> [!NOTE]
-> Feel free to copy these and mess around with them.
+These four code examples range from a novice user all the way to a professional in terms of difficulty. Each script provides a description and a breakdown of how the script works. Feel free to copy these and mess around with them.
 
 ### **Novice**
 
@@ -153,12 +148,16 @@ flatness = $float(Bowl Flatness,0.8,0.1,2.5)$
 tolerance = (scale*10)*flatness
 block=$blockState(Block)$
 
+function isTolerable(a, b, tol)
+    return math.abs(a - b) <= tol
+end
+
 for DistX = -scale, scale do
     for DistY = -scale, scale do
         for DistZ = -scale, scale do
             local formulaL = DistX^2 + DistY^2 + (DistZ^1.5)*-(flatness*10)^2
             local formulaR = 0
-            if (formulaL - formulaR) <= tolerance then
+            if isTolerable(formulaL, formulaR, tolerance) then
                 setBlock(x + DistX, y + DistZ, z + DistY, block)
             end
         end
@@ -177,7 +176,7 @@ end
 
 </details>
 
-## References
+## Notes
 
 [^note1]: An integrated development environment (IDE) is a software application that provides comprehensive facilities for software development.
 

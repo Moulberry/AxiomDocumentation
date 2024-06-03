@@ -3,14 +3,14 @@ The main menu bar gives users access to crucial functionality of the mod. Here y
 
 ## File
     
-| Function | Description                  |
-|----------|------------------------------|
-| Import Schematic    | Imports schematic files to your clipboard |
-| Export Schematic     | Exports a selection as a schematic file |
-| Open Reference Image   | Adds a window with an image of your choice |
-| Load Bedrock Packs   | Allows you to import Bedrock Edition textures or models. |
-| Save Selection as CSV  | Exports a selection to a CSV[^note1] format. |
-| Save Clipboard as JSON Model   | This allows you to take blocks and convert them to an item model. Models can be used in resource packs or imported into Blockbench. |
+| Function                     | Description                                                                                                                                                                              |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Import Schematic             | Imports schematic files to your clipboard.                                                                                                                                               |
+| Export Schematic             | Exports clipboard as a schematic file. With the [Commercial License](https://axiom.moulberry.com/commercial), you can set what version the schematic should be. This can go all the way back to 1.7. |
+| Open Reference Image         | Adds a window with an image of your choice.                                                                                                                                              |
+| Load Bedrock Packs           | Allows you to import Bedrock Edition textures or models. (Requires [Commercial License](https://axiom.moulberry.com/commercial))                                                                     |
+| Save Selection as CSV        | Exports a selection to a CSV[^note1] format.                                                                                                                                             |
+| Save Clipboard as JSON Model | This allows you to take blocks and convert them to an item model. Models can be used in resource packs or imported into Blockbench.                                                      |
 
 ## Edit
     
@@ -77,7 +77,7 @@ Clear and open the tool mask editing window. See [Tool Masks](toolmasks.md)
 
 ## Window
     
-The **Windows** submenu lets the user toggle the visibility of important windows. If you ever close a window and want it back, this submenu allows you to reenable it.
+The **Windows** submenu lets the user toggle the visibility of [Windows](windows/intro.md). If you ever close a window and want it back, this submenu allows you to reenable it.
     
 ## Keybinds
 
@@ -87,9 +87,10 @@ The **Keybinds** button opens a window to edit and set keybinds for tools and op
     
 The **Help** submenu contains useful information and configuration options.
 
-The dropdown contains links to information and resources. The style editor can be accessed through this window, allowing you to change and import custom colours for the UI. 
+The dropdown contains links to information and resources. The [style editor](windows/themes.md) can be accessed through this window, allowing you to change and import custom colours for the UI. 
 
-## References
+## Notes
+
 [^note1]: comma-separated values (CSV) is a plaintext format that uses commas to separate values in a table-like manner.
 
 [^note2]: Be aware that biomes in Minecraft are defined in a 4x4x4 grid. However, to make biomes feel more natural, vanilla warps the biomes visually. The biome overlay shows the "real" position of biomes, while biome blending and the f3 screen show the "warped" position of biomes.

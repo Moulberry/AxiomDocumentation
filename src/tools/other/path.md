@@ -8,18 +8,18 @@ You may select from Linear(Bresenham), Linear(DDA), Catenary, Catmull-Rom Spline
 
 # Linear(Bresenham)
 
-This creates a straight line from node to node. Diagonal blocks are not filled in. You cannot change the radius.
+This creates a straight line from node to node. Diagonal blocks are not filled in. You cannot change the radius and shape.
 
 ![Linear(Bresenham)](https://imagedelivery.net/W9K_l6ndK9x4x8m3rurakg/5fd8e02b-0698-453c-8f90-cbd716807d00/original)
 
 # Linear(DDA)
 
-This also creates a straight line from node to node. The diagonal blocks are filled in. You may change the radius.
+This also creates a straight line from node to node. The diagonal blocks are filled in. You may change the radius and shape.
 ![Linear(DDA)](https://imagedelivery.net/W9K_l6ndK9x4x8m3rurakg/b9d88f87-5f1a-4e87-deb1-60a6485e1300/original)
 
 # Catenary
 
-This creates a line which has some slack. It dangles down from node to node. The diagonal blocks are filled in. You may change the radius.
+This creates a line which has some slack. It dangles down from node to node. The diagonal blocks are filled in. You may change the radius and shape.
 
 There are two more parameters for this curve. You may invert it such that it is flipped upside down. You may also adjust the slack, a 0% slack is a straight line.
 

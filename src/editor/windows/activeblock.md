@@ -8,3 +8,5 @@ Blocks in the Editor UI can be drag-dropped on different locations to various ef
  - Into the main viewport to flood replace the targeted block with the dropped block
 
 The **Active Block** can be quickly set using 'pick block', which is bound to middle-click by default.
+
+> Tip: You can use middle-click to copy blocks from the world to your active block

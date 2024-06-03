@@ -9,3 +9,11 @@ A gizmo can contain the following elements:
 
 - **Global Gizmos** A global gizmo has its rotation and axis arrows locked to the world xyz.
 - **Local Gizmos** Unlike global gizmos, local gizmos have their rotation and axis locked to the object itself. Rotating your object 45 degrees will alter your axis arrows by 45 degrees.
+
+## Placement
+
+Placements can be repositioned and rotated using the Gizmo.
+
+Once the placement is in the correct position, you can use Enter or Ctrl+V to confirm it. To cancel a placement, use the Delete or Backspace key.
+
+> Tip: The placement can be rotated clockwise using the Ctrl+R keybind, and can be flipped in the direction of your mouse vector using the Ctrl+F keybind.

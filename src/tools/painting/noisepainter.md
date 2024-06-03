@@ -6,6 +6,8 @@ The first unqiue option is the toggle for the ‘3D’ setting. This allows the 
 
 Next, we have the scale option, which adjusts the size of the noise relative to the block grid. A larger scale means that the noise pattern is spread over a larger area of blocks.
 
+Finally, the Anisotropic option enables control of scale on each axis individually, allowing for a stretched effect. 
+
 ## Noises
 
 There are a few shared settings across the different noises. The common options between these noises are listed below, with sepcific settings for each noise described in their respective sections.
@@ -54,6 +56,8 @@ White noise generates a completely random pattern with no discernible structure,
 The section beneath the noise configuration allows you to specify the blocks used in painting, as well as determine their distribution within the noise pattern. You can adjust the block distribution by setting a threshold between 0 to 1 or specifying a per-block percentage from 0 to 100%. The threshold setting is particularly useful when you're tweaking parameters for complex noises like Worley.
 
 Clicking the '+' sign adds a new block. Clicking on an existing block allows you to select and add different blocks to your noise pattern. You can also drag and drop palettes and active blocks onto the blocks section.
+
+To modify the property of a block, right-click on the block icon and a menu will appear, allowing you to toggle and set different properties.
 
 ## Preview
 

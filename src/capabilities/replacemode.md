@@ -12,7 +12,7 @@ A basic demonstration of Replace Mode can be found below
 
 ## Type Replace
 
-Type Replace can be toggled on through the Options Toolbox in the Alt Menu. Turning this on allows you to hold a base material block (eg. Spruce Planks) to replace stairs/slabs/walls/fences/etc. with their spruce variant
+Type Replace can be toggled on through the [Options Toolbox](/builder/contextmenu.md#Toolbox) in the Alt Menu. Turning this on allows you to hold a base material block (eg. Spruce Planks) to replace stairs/slabs/walls/fences/etc. with their spruce variant
 
 A demonstration of Type Replace can be found below
 
