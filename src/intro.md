@@ -1,4 +1,4 @@
-![Axiom Logo](/src/img/axiomIcon.png)
+![Axiom Logo](/img/axiomIcon.png)
 
 # Introduction
 
