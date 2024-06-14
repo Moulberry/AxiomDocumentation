@@ -29,10 +29,3 @@ The tools that are currently available in this section are:
 - [Setup Symmetry](/builder/setupsymmetry.md)
 
 ![Builder Tools](/img/BuilderToolsOverview.png)
-
-
-## Gameplay
-
-Using Ctrl + C while looking at a block will copy its exact nbt state.
-
-When searching in the creative inventory, pressing enter will add the first listed block to your current hotbar slot.

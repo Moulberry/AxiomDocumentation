@@ -1,6 +1,6 @@
 # Tool Presets
 
-Tool Presets allow for easy saving and loading of tool settings and configurations. Tool presets are saved in the axiom [configuration](/advanced/configuration.md) at `.minecraft/config/axiom/tool_presets` as NBT format.
+Tool Presets allow for easy saving and loading of tool settings and configurations. Tool presets are saved in the Axiom [configuration](/advanced/configuration.md) at `.minecraft/config/axiom/tool_presets` as NBT format.
 
 ## Saving Presets
 

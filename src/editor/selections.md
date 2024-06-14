@@ -6,6 +6,6 @@ There are three selection tools in Axiom that you can use to make selections. Ea
 
 With a selection, you can constrain the brush strokes of [Tools](/tools/intro.md) (note: some more complex tools don't respect selections yet, this will be addressed soon).
 
-You can also apply [Operations](/editor/mainmenubar.md#operations) to the blocks in your selection.
+You can also apply [Operations](/editor/mainmenubar/intro.md#operations) to the blocks in your selection.
 
-Finally, to clear a selection, use '[Select](/editor/mainmenubar.md#select) > Clear' or press the Enter key
+Finally, to clear a selection, use '[Select](/editor/mainmenubar/intro.md#select) > Clear' or press the Enter key
