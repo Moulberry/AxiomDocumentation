@@ -2,6 +2,8 @@
 
 The path tool features the ability to set multiple points in a 3D environment and choose how each point is connected with blocks.
 
+The block used is determined by the [Active Block](/editor/windows/activeblock.md)
+
 You can choose from either a line or a curved path to connect the points. There are multiple variants for both lines and curves:
 
 - Line
@@ -47,3 +49,16 @@ The Bezier Curve path type smoothes the path but isn't required to reach each no
 | Keep Existing        | When enabled, all existing blocks will not be overridden by the path.                                                                                                                                                   |
 | Extend to Ground     | When enabled, the path is extended to the ground until it reaches a solid surface.                                                                                                                                      |
 | Paste Copy           | The 'Paste Copy' button places the path while allowing you to continue editing it.                                                                                                                                      |
+
+## Node Options
+
+When an individual node is selected, you can adjust the position using the [Gizmo](/editor/gizmos.md).
+
+Alongside adjusting node positions, you can modify the node properties individually.
+
+| Option          | Description                                                                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Position        | Allows for changing the coordinates of the selected node directly.                                                                                                 |
+| Override Block  | Allows for overriding the block used for the node. The blocks between each node are blended using a [Bezier gradient](/painting/gradientpainter.md#interpolation). |
+| Override Radius | Enables the ability to set a radius for that node specifically. The path smoothly increases width along two points.                                                |
+| Remove          | Deletes the current node. This can also be done by pressing the `Del` or `Backspace` key.                                                                          |
