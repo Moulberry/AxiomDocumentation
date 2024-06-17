@@ -6,37 +6,49 @@ Aiming at specific parts of a block can change the effect of the tinker. This le
 
 Tinker interactions can be negated while the capability is toggled on by either having a non-empty hand or by holding down the sneak or ‘shift’ button.
 
-| Block                                | Tinker Property Effect                                     |
-| ------------------------------------ | ---------------------------------------------------------- |
-| Blocks with full/stair/slab variants | Convert between full/stair/slab by adding/removing corners |
-| Walls                                | Cycle WallSide (none/low/tall) of targeted side            |
-| Fences/Iron bars/Chorus Plant        | Toggle north/east/south/west sides                         |
-| Piston                               | [Side] Change facing, [Front] Extends/retracts the piston  |
-| Furnace                              | [Side] Change facing, [Front] Toggles lit state            |
-| Carved Pumpkin/Jack O Lantern        | [Side] Change facing, [Front] Swaps between the 2 blocks   |
-| Barrel                               | [Side] Change facing, [Front] Opens/closes                 |
-| Iron Trapdoor/Door                   | Open/closes the block                                      |
-| Brewing Stand                        | Add/remove bottles                                         |
-| Glazed Terracotta                    | Change facing                                              |
-| Farmland                             | Cycle moisture                                             |
-| Scaffolding                          | Toggle bottom                                              |
-| Small/Medium/Large/Cluster Amethyst  | Cycles between the 4 blocks                                |
-| Lectern                              | Toggles book                                               |
-| Candle/Campfire/Redstone Torch       | Toggles lit                                                |
-| Cave Vines                           | Toggles berries                                            |
-| Bamboo Stalk                         | Toggles bamboo leaves                                      |
-| Cauldron                             | Cycles fluid level                                         |
-| Composter                            | Cycles compost level                                       |
-| Beehive                              | Cycles honey level                                         |
-| Cake                                 | Cycles bites                                               |
-| Lantern                              | Toggles hanging                                            |
-| Fence Gate                           | Toggles lowered and facing axis                            |
-| Player Head                          | Cycles rotation                                            |
-| Banner                               | Cycles rotation                                            |
-| Attached Melon/Pumpkin Stem          | Switches facing axis                                       |
-| Rails                                | Cycles rotation                                            |
-| Any block with 'Age' property        | Cycles age                                                 |
-| Any block with 'Powered' property    | Toggles powered                                            |
+| Block                             | Tinker Property Effect                                  |
+| --------------------------------- | ------------------------------------------------------- |
+| Walls                             | Cycle `axis` and cycle `none`, `low`, `tall`            |
+| Fences                            | Cycle `axis`                                            |
+| Chorus Plant                      | Cycle `axis` and toggle `up` / `down`                   |
+| Iron Bars                         | Cycle `axis`                                            |
+| Piston                            | Cycle `facing` and switches `Extended` / `Retracted`    |
+| Furnace                           | Cycle `facing` and toggle `lit`                         |
+| Carved Pumpkin/Jack o'Lantern     | Cycle `facing` and switches `Carved` / `Jack o'Lantern` |
+| Barrel                            | Cycle `facing`                                          |
+| Iron Trapdoor/Door                | Cycle `open`                                            |
+| Brewing Stand                     | Cycle `bottles`                                         |
+| Glazed Terracotta                 | Cycle `facing`                                          |
+| Farmland                          | Cycle `moisture`                                        |
+| Scaffolding                       | Toggle `bottom`                                         |
+| Amethyst Cluster                  | Cycles `stages`                                         |
+| Lectern                           | Toggles `book`                                          |
+| Cave Vines                        | Toggles `berries`                                       |
+| Bamboo Stalk                      | Toggles `leaves`                                        |
+| Cauldron                          | Cycles `fluid level`                                    |
+| Composter                         | Cycles `compost level`                                  |
+| Beehive                           | Cycles `honey level`                                    |
+| Cake                              | Cycles `bites`                                          |
+| Lantern                           | Toggles `hanging`                                       |
+| Fence Gate                        | Toggles `lowered` and cycles `facing`                   |
+| Player Head                       | Cycles `rotation`                                       |
+| Banner                            | Cycles `rotation`                                       |
+| Attached Melon/Pumpkin Stem       | Cycles `facing`                                         |
+| Rails                             | Cycles `rotation`                                       |
+| Bell                              | Cycles `facing`                                         |
+| Bamboo Block                      | Cycle `facing` and toggles `stripped`                   |
+| Chest                             | Cycle facing                                            |
+| End Portal Frame                  | Cycle `facing` and toggles `eye`                        |
+| Observer                          | Cycle `facing` and toggle `powered`                     |
+| Snow                              | Cycle layer                                             |
+| Turtle Egg                        | Cycle eggs                                              |
+| Suspicious Sand/Gravel            | Switch `Suspicious Sand` and `Suspicious Gravel`        |
+| Grass Block / Dirt Path           | Switch `Grass Block` and `Dirt Path`                    |
+| Azalea                            | Switch `flowering`                                      |
+| Water / Lave                      | Cycle `level`                                           |
+| Any block with 'age' property     | Cycles `age`                                            |
+| Any block with 'lit' property     | Toggles `lit`                                           |
+| Any block with 'powered' property | Toggles `powered`                                       |
 
 
 Additionally:

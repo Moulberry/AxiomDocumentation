@@ -1,56 +1,49 @@
-# Paths
+# Path
 
-The path tool allows you create curves in 3d space using gizmos as nodes. Click on any point to create a gizmo. It will be automatically selected. Click `ctrl + z` or the undo keybind to remove the currently selected gizmo.
+The path tool features the ability to set multiple points in a 3D environment and choose how each point is connected with blocks.
 
-# Curve types
+You can choose from either a line or a curved path to connect the points. There are multiple variants for both lines and curves:
 
-You may select from Linear(Bresenham), Linear(DDA), Catenary, Catmull-Rom Spline, and Bezier curve.
+- Line
+  - Bresenham
+  - DDA
+- Curve
+  - Catenary
+  - Catmull-Rom Spline
+  - Bezier Curve
 
-# Linear(Bresenham)
+## Path Types
 
-This creates a straight line from node to node. Diagonal blocks are not filled in. You cannot change the radius and shape.
+### Line (Bresenham)
 
-![Linear(Bresenham)](https://imagedelivery.net/W9K_l6ndK9x4x8m3rurakg/5fd8e02b-0698-453c-8f90-cbd716807d00/original)
+A line which is always one block wide and only changes angle once it has reached a node. This is the only path type without a modifiable width.
 
-# Linear(DDA)
+### Line (DDA)
 
-This also creates a straight line from node to node. The diagonal blocks are filled in. You may change the radius and shape.
-![Linear(DDA)](https://imagedelivery.net/W9K_l6ndK9x4x8m3rurakg/b9d88f87-5f1a-4e87-deb1-60a6485e1300/original)
+Unlike the Bresenham Line, the DDA has a modifiable width using the **Radius** slider, allowing for rounded path lines.
 
-# Catenary
+### Catenary
 
-This creates a line which has some slack. It dangles down from node to node. The diagonal blocks are filled in. You may change the radius and shape.
+This path type creates the effect of hanging rope or bunting. For each point, the path takes a 'dipped' approach to the next point. You can increase the slack by increasing the **Slack** slider.
 
-There are two more parameters for this curve. You may invert it such that it is flipped upside down. You may also adjust the slack, a 0% slack is a straight line.
+You can also invert the slack direction by enabling the **Inverted** button.
 
-![Catenary](https://imagedelivery.net/W9K_l6ndK9x4x8m3rurakg/90849c39-9774-4ad7-377a-efed21509400/original)
+### Catmull-Rom Spline
 
-# Catmull-Rom Spline
-This type of spline is particularly useful for creating smooth paths. The spline passes through every node. The spline is also continuously smoothed between nodes evenly*.
+This path type smoothes out the path direction while still reaching each node.
 
-![Catmull-Rom Spline](https://imagedelivery.net/W9K_l6ndK9x4x8m3rurakg/d2b12da7-3514-4be9-6ba1-3ae1d589d900/original)
+### Bezier Curve
 
-# Bezier Curve
+The Bezier Curve path type smoothes the path but isn't required to reach each node except for the start and end nodes. Unlike the Catmull-Rom Spline, the nodes influence the direction rather than direct it.
 
-A Bezier curve is formed by specifying a set of nodess that influence the shape of the curve. The curve starts at the first nodes, ends at the last node, and is influenced by the positions of the intermediate control points. The curve smoothly interpolates between the control points. The curve does NOT pass through all the nodes. The nodes other than the start and end nodes affect how the curve is shaped.
-[Read more here](https://www.wikiwand.com/en/B%C3%A9zier_curve)
+## Path Tool Options
 
-![Bezier Curve](https://imagedelivery.net/W9K_l6ndK9x4x8m3rurakg/24a41357-17ef-4403-8ecd-6994d06cad00/original)
-
-# Additional curve options
-
-Looped: When enabled, this connects the first and last nodes, forming a loop.
-
-# Node specific options
-
-**Overried Block**
-
-This option allows you to override the block for that node. It forms a gradient between the connected node(s). If this option is not enabled, the active block is used by default, forming a gradient with that block.
-
-**Override Radius**
-
-This option allows you to override the radius for that node. When enabled, the radius will smoothly transition between each node, allowing you to create curves with changes in thickness.
-
-**Catmull-Rom Spline Easing**
-
-You may select between Linear, Slight, Quadratic, Cubic, or Quartic easing. Each easing looks different. This only affects the easing of the selected node.
+| Option               | Description                                                                                                                                                                                                             |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Looped               | Connects the end position to the start position to form a loop.                                                                                                                                                         |
+| Use Stairs and Slabs | This option only appears when using a block with stair or slab variants such as stone or planks. It smooths out the path by adding stairs and slabs to the curve or line. This works best with a radius of one or more. |
+| Shape                | Allows you to switch between a flat or spherical path shape. This setting is not available for the Bresenham line.                                                                                                      |
+| Radius               | Used to adjust the width of the chosen shape. This setting is not available for the Bresenham line.                                                                                                                     |
+| Keep Existing        | When enabled, all existing blocks will not be overridden by the path.                                                                                                                                                   |
+| Extend to Ground     | When enabled, the path is extended to the ground until it reaches a solid surface.                                                                                                                                      |
+| Paste Copy           | The 'Paste Copy' button places the path while allowing you to continue editing it.                                                                                                                                      |

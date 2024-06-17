@@ -18,6 +18,6 @@ The default camera controls are:
 
 The [Flight Speed](/builder/contextmenu.md#Flight_Speed) can be changed using the slider at the bottom right corner of the Editor UI.
 
-Keybinds can be found in the [Main Menu Bar](mainmenubar/intro.md) titled 'Keybinds'.
+Keybinds can be found in the [Main Menu Bar](mainmenubar.md#keybinds) titled 'Keybinds'.
 
 If you'd prefer a default key layout reminiscent of Blender, use Load Default > Blender-like.

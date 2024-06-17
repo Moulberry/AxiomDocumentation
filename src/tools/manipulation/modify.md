@@ -17,6 +17,8 @@ With your selection active, two circular lines will appear, the red indicates th
 
 The Revolve tool can rotate on all three axes separately and has an option to control the amount of angle the tool uses. An angle of 360 does a full loop and 180 does a half loop.  
 
+The **Add Translation** button will allow you to offset the end position of the revolve using whole or decimal numbers.
+
 ## Translate Copies
 
 Similar to[stack](/builder/stack.md), Translate Copies allows for offsetting by relative or absolute values. The count controls the amount of copies to be made with the offset. 

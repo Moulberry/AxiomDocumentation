@@ -6,7 +6,7 @@ All **Windows** are built around the main [view](views.md) as it's the only wind
 
 ### Opening New Windows
 
-To open a closed window, use the [Main Menu Bar](/editor/mainmenubar/intro.md) and find the `Windows` category. In there, you will find a list of each Window and its toggle.
+To open a closed window, use the [Main Menu Bar](/editor/mainmenubar.md) and find the `Windows` category. In there, you will find a list of each Window and its toggle.
 
 When enabling a window, it will appear in the centre of the screen as slightly transparent. This is due to the window being undocked.
 
@@ -26,7 +26,7 @@ To undock a window, drag it by the title and it will undock.
 
 ### Themes
 
-Themes can be used to further customise the Editor UI with custom colours. To edit the current theme, click `Style Editor` under `Help` in the [Main Menu Bar](editor/mainmenubar/intro.md). Themes can be imported and exported from the clipboard. 
+Themes can be used to further customise the Editor UI with custom colours. To edit the current theme, click `Style Editor` under `Help` in the [Main Menu Bar](editor/mainmenubar.md). Themes can be imported and exported from the clipboard. 
 
 ### Select Block
 
