@@ -14,6 +14,7 @@ Below are the three files alongside their descriptions.
 | ------------------------------ | -------------------------------------------------------------------------------------- |
 | completedTutorials             | Lists the tools that have shown their short tutorial.                                  |
 | customDowngradeSuggestions     | Lists the downgrades suggested by Axiom.                                               |
+| defaultLayout                  | Stores the UI data for the currently enabled UI layout.                                |
 | globalScale                    | A float representing the [Editor](editor/intro.md) UI Scale.                           |
 | lastTranslationCount           | A value determining the amount of translations.                                        |
 | openEditorWindowTypes          | A list of open windows in the editor.                                                  |

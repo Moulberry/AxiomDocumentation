@@ -28,7 +28,7 @@ The tables below cover the settings for the **Create Display** Entity menu.
 | Setting             | Description                                                                                                                                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Text                | The black box provides space to enter text for the text display.                                                                                              |
-| Background Color    | The background colour determines the colour surrounding the text. The colour fomat for the background colour is ARGB in Hexadecimal. |
+| Background Color    | The background colour determines the colour surrounding the text. The colour fomat for the background colour is ARGB in Hexadecimal.                          |
 | Line Width          | The line width determines the amount of space required to start a new line.                                                                                   |
 | Alignment           | The alignment determines the offset relative to the gizmo.                                                                                                    |
 | Shadow              | Adds a shadow effect to the text.                                                                                                                             |
@@ -42,28 +42,23 @@ The **Additional Settings** submenu provides further options for the display ent
 
 ## Display Entity Manipulation
 
-When the white box at the centre of the display entity is selected, a [Gizmo](/editor/gizmos.md) will appear. Clicking the white box with left-click will select it. 
-
-The gizmo allows movement, rotation and resizing in all directions. To move display entities with the gizmo, use left-click and drag one of the three arrows in a direction. Rotation is almost the same, click and drag the outer rings in any direction to rotate the display entity. To resize the display entity, drag one of the outer cubes in any direction.
-
-The three flat squares within the gizmo lock the movement to a 2D plane. Dragging one of these squares will move the display entity along the 2D plane.
-
-The central, white cube can be used to move the display entity in all three dimensions.
+Left-clicking the white node at the centre of the Display Entity will display a [Gizmo](/editor/gizmos.md). Using the gizmo, you can move, rotate and scale the Display Entity in any direction.
 
 ## Keybinds
 
-There are many key combinations that can be used while moving, rotating or resizing display entities. Listed below are all key combinations alongside their description.
+There are many key combinations that can be used while the gizmo is active. Listed below are all key combinations alongside their description.
 
-| Key                | Description                                                                                                                                                                       |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Right Click        | Moves the Display Entity to the block you're facing. However, while looking at the white cube on the gizmo, it opens the [Editing Menu](displayentities.md#editing-menu) for the selected display entity.                                                                                        |
-| Scroll             | Nudges the display by the default step size[^note3].                                                                                                                              |
-| Control            | Used alongside Left Click to increase the step size. The movement step is changed to 1 block, the rotation step is set to 15 degrees and the scale is set to affect all axes rather than one. |
-| Shift              | Lowers the step size for movement and scale to 0.0001 blocks and sets the rotation step size to 1 degree.                                                                         |
-| Control + C        | Copies the display entity to the clipboard. This can be pasted using `Control + V`.                                                                                               |
-| Delete / Backspace | Deletes the selected Display Entity.                                                                                                                                              |
-| Control + Z        | Undo the previous edit.                                                                                                                                                           |
-| Control + Y        | Redo the undone edit.                                                                                                                                                             |
+| Key                | Description                                                                                                                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Right Click        | Moves the Display Entity to the block you're facing. However, while looking at the white cube on the gizmo, it opens the [Editing Menu](displayentities.md#editing-menu) for the selected display entity. |
+| Scroll             | Nudges the display by the default step size[^note3].                                                                                                                                                      |
+| Control            | Used alongside Left Click to increase the step size. The movement step is changed to 1 block, the rotation step is set to 15 degrees and the scale is set to affect all axes rather than one.             |
+| Shift              | Lowers the step size for movement and scale to 0.0001 blocks and sets the rotation step size to 1 degree.                                                                                                 |
+| Control + C        | Copies the display entity to the clipboard. This can be pasted using `Control + V`.                                                                                                                       |
+| Delete / Backspace | Deletes the selected Display Entity.                                                                                                                                                                      |
+| Control + Z        | Undo the previous edit.                                                                                                                                                                                   |
+| Control + Y        | Redo the undone edit.                                                                                                                                                                                     |
+| Middle-Click       | Copies the Display Entity to an item. This works the same as spawn eggs and can be snapped to different rotation steps by using control or shift while placing.                                           |
 
 ## Editing Menu
 

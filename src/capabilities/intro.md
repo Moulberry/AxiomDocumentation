@@ -15,3 +15,9 @@ The Capabilities that are currently available are:
 Capabilities can be toggled using the left side of the [Context Menu](/builder/contextmenu.md)
 
 Additionally, keybinds can be associated with capabilities to quickly toggle them. By default, only the [Replace Mode](/capabilities/replacemode.md) has a keybind (R), but more can be added in the vanilla controls menu (Esc > Options > Controls)
+
+## Gameplay
+
+Using Ctrl + C while looking at a block will copy its exact nbt state.
+
+When searching in the creative inventory, pressing enter will add the first listed block to your current hotbar slot.

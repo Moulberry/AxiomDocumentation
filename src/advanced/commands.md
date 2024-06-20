@@ -48,4 +48,4 @@ These are some extra commands for controlling the world and its properties. Thes
 
 ## Compatible commands
 
-`//pos1` and `//pos2` are part of Axiom, but are intended to be used alongside WorldEdit. They expand the provided corner point to the player's position.
+`//pos1` and `//pos2` can be used in conjunction with WorldEdit. Using these commands will cause Axiom to render a box to visualise your selection.

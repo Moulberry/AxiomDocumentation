@@ -6,6 +6,8 @@
 
 Right-clicking the marker gizmo will open a menu, allowing you to input custom NBT for the marker.
 
+Using `Ctrl+C` while the gizmo is active, will copy the marker data to the clipboard. Using `Ctrl+V` will paste the copied marker into the world. 
+
 ## Notes
 
 [^note1]: [Display Entities Wiki](https://minecraft.wiki/w/Marker).

@@ -48,9 +48,14 @@ Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling r
 | Placement           | Description                                                 |
 |---------------------|-------------------------------------------------------------|
 | Gizmo               | Switch between a global or local [gizmo](/editor/gizmos.md) |
-| Pivot               | Switch between centred gizmo or base gizmo position |
+| Pivot               | Switch between centred gizmo or base gizmo position         |
 
-**Keep Existing** Disables the overriding of other blocks when placing the shape. 
+## Paste
+
+| Paste         | Description                                                     |
+| ------------- | --------------------------------------------------------------- |
+| Keep Existing | Disables the overriding of other blocks when placing the shape. |
+| Paste Copy    | Places a copy of the shape at the current position.             |
 
 ## Video Demo
 
