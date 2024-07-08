@@ -5,3 +5,5 @@ The **Extrude** tool is designed to adjust the size of surfaces, either expandin
 The tool also includes a "block compare" mode, which operates similarly to the block compare modes of the magic select tool. This mode determines which blocks the tool will affect. Options include all blocks, only blocks of the same type, blocks with the same block state, any solid blocks, or every block, providing a great deal of customization.
 
 The Extrude tool also features a "displace" function. When activated, this function causes surfaces that are one block thick to move, rather than creating a copy or addition to them. This can be particularly useful when you want to reposition elements like walls or ceilings without altering their thickness.
+
+The **Count** slider determines how many layers are placed per click.

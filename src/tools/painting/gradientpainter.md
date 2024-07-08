@@ -22,7 +22,7 @@ In order from top to bottom: Nearest, Linear, Bezier.
 
 ![Interpolation](https://cdn.discordapp.com/attachments/1012669638578020403/1153874160502722641/2023-09-19_21.24.42.png)
 
-Look up the curves to see how it is calculated specifically but in essence, nearest gives you hard boundaries between each block type. Linear gives a smooth transistion as the name implies, and Bezier has a more rapid change in the center, and eases in/out. The effect is more apparent with larger gradients.
+Look up the curves to see how it is calculated specifically but in essence, nearest gives you hard boundaries between each block type. Linear gives a smooth transition as the name implies, and Bezier has a more rapid change in the center, and eases in/out. The effect is more apparent with larger gradients.
 
 # Locking
 

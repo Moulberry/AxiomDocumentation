@@ -16,7 +16,7 @@ Although intimidating at first, once you understand the basic concept of program
  
 - There is only one built-in library[^note3] and there are currently no others.
 
-> The Script must return a block or use setBlock() to modify blocks in the world.
+> The Script must use `return blocks.stone` or use `setBlock(x,y,z,blocks.stone)` to modify blocks in the world.
 
 There are many predefined variables and functions that can be used throughout the script to interact with the world. Listed below, are all variables and functions with descriptions and examples.
 
@@ -25,22 +25,24 @@ There are many predefined variables and functions that can be used throughout th
 | Variables | Description                                                    | Example      |
 |-----------|----------------------------------------------------------------|--------------|
 | x,y,z     | These three variables represent the XYZ coordinates.           | if y==5      |
-| blocks    | Can be used to retrieve the blockstate[^note4] ID for a block. | blocks.stone |
+| blocks    | Can be used to retrieve the **Blockstate ID** for a block.     | blocks.stone |
 
 ## Custom Functions
 
-|  <div style="width:100px">Functions</div> | Description                                                                                       | Example                                                        |
-|-------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| getBlock(x,y,z)                           | Returns the block ID at the given position (x,y,z).                                               | getBlock(x,y,z)==blocks.stone                                  |
-| getBlockState(x,y,z)                      | Returns the blockstate[^note4] ID at a given position.                                            | getBlockstate(x,y,z)==withBlockProperty(blocks.chain,"axis=x") |
-| getHighestBlockYAt(x,z)                   | Returns the Y value of the highest block on the XZ coordinates.                                   | getHighestBlockYAt(x,z)==20                                    |
-| getSimplexNoise(x,y,z,seed)               | Returns a value between 0 and 1, representing the Simplex noise for the provided coordinates.     | getSimplexNoise(x,y,z,42)=>0.5                                 |
-| getVoroniEdgeNoise(x,y,z,seed)            | Returns a value between 0 and 1, representing the Voroni Edge noise for the provided coordinates. | getVoroniEdgeNoise(x,y,z,01134)=>0.5                           |
-| isSolid(block)                            | Returns true if the block is solid, false if not.                                                 | isSolid(getBlock(x,y,z))                                       |
-| isBlockTagged(block,"tag")                | Returns true if the block has the provided tag, false if not.                                     | isBlockTagged(getBlock(x,y,z),"wooden_fences")                 |
-| withBlockProperty(block,"property=value") | Used to return or set a block with a block property.                                              | withBlockProperty(blocks.oak_slab,"waterlogged=true")          |
-| getBlockProperty(block,"property")        | Returns the value of the provided block property.                                                 | getBlockProperty(blocks.oak_slab,"waterlogged")==true          |
-| setBlock(x,y,z,block)                     | Set an additional block at a given position.                                                      | setBlock(x,y,z,blocks.stone)                                   |
+| Functions                                                 | Description                                                                                       | Example                                                        |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| getBlock(x,y,z)                                           | Returns the **Blockstate ID** at the given position (x,y,z).                                      | getBlock(x,y,z)==blocks.stone                                  |
+| getBlockState(x,y,z)                                      | Returns the **Blockstate ID** property at a given position.                                       | getBlockstate(x,y,z)==withBlockProperty(blocks.chain,"axis=x") |
+| getHighestBlockYAt(x,z)                                   | Returns the Y value of the highest solid block on the X and Z coordinates.                        | getHighestBlockYAt(x,z)==20                                    |
+| getSimplexNoise(x,y,z,**seed**)                           | Returns a value between 0 and 1, representing the Simplex noise for the provided coordinates.     | getSimplexNoise(x,y,z,42)=>0.5                                 |
+| getVoroniEdgeNoise(x,y,z,**seed**)                        | Returns a value between 0 and 1, representing the Voroni Edge noise for the provided coordinates. | getVoroniEdgeNoise(x,y,z,01134)=>0.5                           |
+| isSolid(**Blockstate ID**)                                | Returns true if the **Blockstate ID** is solid, false if not.                                     | isSolid(getBlock(x,y,z))                                       |
+| isBlockTagged(**Blockstate ID**,"**tag**")                | Returns true if the **Blockstate ID** has the provided tag, false if not.                         | isBlockTagged(getBlock(x,y,z),"wooden_fences")                 |
+| withBlockProperty(**Blockstate ID**,"**property=value**") | Used to return or set a **Blockstate ID** with a **Blockstate ID** property.                      | withBlockProperty(blocks.oak_slab,"waterlogged=true")          |
+| getBlockProperty(**Blockstate ID**,"**property**")        | Returns the value of the provided **Blockstate ID** property.                                     | getBlockProperty(blocks.oak_slab,"waterlogged")==true          |
+| setBlock(x,y,z,**Blockstate ID**)                         | Set an additional **Blockstate ID** at a given position.                                          | setBlock(x,y,z,blocks.stone)                                   |
+
+> Blockstate IDs with and without properties can be used in all functions which use a Blockstate ID
 
 ## Template Variables
 
@@ -183,5 +185,3 @@ end
 [^note2]: Lua is a lightweight programming language designed for embedded use within applications.
 
 [^note3]: The [Math Library](https://www.lua.org/pil/18.html) is the only built-in library in the Script Brush.
-
-[^note4]: Blockstate IDs are calculated using [Block IDs](https://minecraftitemids.com/). The formula for blockstate IDs is `-n-x` where n is the Block ID and x is the block state.
