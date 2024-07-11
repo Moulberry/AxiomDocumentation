@@ -2,7 +2,7 @@
 
 The **Noise Painter** is a very versatile painting tool which enables the user to use procedural noises for painting in the world. There is a large variety of noises which can be picked from and configured. Each of which having unique options and patterns useful in different scenarios.
 
-The first unqiue option is the toggle for the ‘3D’ setting. This allows the noise to be calculated in 3D, allowing for the painting of the sides of surfaces instead of just the top.
+The first unique option is the toggle for the ‘3D’ setting. This allows the noise to be calculated in 3D, allowing for the painting of the sides of surfaces instead of just the top.
 
 Next, we have the scale option, which adjusts the size of the noise relative to the block grid. A larger scale means that the noise pattern is spread over a larger area of blocks.
 
@@ -10,7 +10,7 @@ Finally, the Anisotropic option enables control of scale on each axis individual
 
 ## Noises
 
-There are a few shared settings across the different noises. The common options between these noises are listed below, with sepcific settings for each noise described in their respective sections.
+There are a few shared settings across the different noises. The common options between these noises are listed below, with specific settings for each noise described in their respective sections.
 
 - **Octaves:** This setting determines the number of layers of noise that are used. More octaves result in more detail and complexity but comes with a higher computational cost.
 Lacunarity and Gain can only be configured when you have more than one octave for your noise.
@@ -45,7 +45,7 @@ This type of noise specifically accentuates the edges or boundaries between the 
     
 Metaball noise creates a pattern that looks like overlapping blobs or spheres, with smooth transitions between these 'blobs'. Similar to the patterns of blobs in lava lamps.
     
-- **Range:** Adjusts the radius around each point that influences the noise. A larger range results in larger, more spread-out blobs, resembling a pattern more reminescent of the aforementioned lavalamp blobs.
+- **Range:** Adjusts the radius around each point that influences the noise. A larger range results in larger, more spread-out blobs, resembling a pattern more reminiscent of the aforementioned lava lamp blobs.
     
 ### White Noise
     
@@ -59,9 +59,11 @@ Clicking the '+' sign adds a new block. Clicking on an existing block allows you
 
 To modify the property of a block, right-click on the block icon and a menu will appear, allowing you to toggle and set different properties.
 
+When one or more blocks with multiple properties is used, a **Copy Properties** button will appear at the bottom of the block list. This will paint over existing blocks with the same block state, while keeping the noise pattern.
+
 ## Preview
 
 Lastly, beneath the settings, there are three windows to aid in visualizing the noise pattern, cumulative distribution, and probability density:
 
-- **Noise Preview**: As the name suggests, this provides an approximation of how the current noise settings would look, mapped to the voxel grid. It uses a grayscale representation to depict block presence, with white denoting the primary block and the color darkening as more blocks are added. Black signifies no blocks.
+- **Noise Preview**: As the name suggests, this provides an approximation of how the current noise settings would look, mapped to the voxel grid. It uses a gray-scale representation to depict block presence, with white denoting the primary block and the color darkening as more blocks are added. Black signifies no blocks.
 - **Cumulative Distribution and Probability Density Visualizers**: These tools are especially useful when you've set the Blocks mode to be threshold-based. They help illustrate how the blocks will be distributed within the noise pattern. The Cumulative Distribution Visualizer provides a graph showing the cumulative percentages of different blocks as the noise threshold increases from 0 to 1. The Probability Density Visualizer gives a sense of how likely each block is to appear at a given noise value. It can help you understand and fine-tune the balance of blocks in your noise pattern.

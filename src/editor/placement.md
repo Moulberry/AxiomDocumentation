@@ -8,15 +8,16 @@ Once the placement is in the correct position, you can use Enter or Ctrl+V to co
 
  ## Placement Options
 
-| Option          | Description                                                                  |
-| --------------- | ---------------------------------------------------------------------------- |
-| Keep Existing   | Stops the placement from overriding pre-existing blocks                      |
-| Paste Air       | Enables air to override pre-existing blocks                                  |
-| Merge Blocks    | Merges new blocks with existing blocks based on the block shape.             |
-| Unlock Rotation | Allows the placement to be rotated at any angle rather than 90 degree steps. |
-| Rotate/Scale    | Opens the [Rotate/Scale](placement.md#Rotate_and_Scale) window.              |
-| Snap to ground  | Repositions the placement down to the nearest solid surface.                 |
-| Paste Copy      | Places a copy of the placement without cancelling the placement.             |
+| Option           | Description                                                                  |
+| ---------------- | ---------------------------------------------------------------------------- |
+| Keep Existing    | Stops the placement from overriding pre-existing blocks                      |
+| Paste Air        | Enables air to override pre-existing blocks                                  |
+| Merge Blocks     | Merges new blocks with existing blocks based on the block shape.             |
+| Unlock Rotation  | Allows the placement to be rotated at any angle rather than 90 degree steps. |
+| Rotate/Scale     | Opens the [Rotate/Scale](placement.md#Rotate_and_Scale) window.              |
+| Snap to ground   | Repositions the placement down to the nearest solid surface.                 |
+| Paste Copy       | Places a copy of the placement without cancelling the placement.             |
+| Paste and Select | Places the object and selects it, allowing for further modification.         |
 
 ## Rotate and Scale
 

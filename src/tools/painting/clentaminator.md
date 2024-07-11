@@ -1,5 +1,7 @@
 # Clentaminator
 
+> This tool is only available for versions 2.8.1 and below, the new [Script Brush](scriptbrush.md) tool contains most of the following features under the [Presets](/editor/toolpresets.md) drop-down.
+
 The **Clentaminator** is a set of predefined painting tools that typically have complex set of predefined placement rules which don’t fall under other cateogories. Due to this they often use advanced algorithms to produce interesting patterns but are more specific in which cases they can be used.
 
 The clentaminator lets you configure the brush to define the stroke path, just like other tools. Other than that it has two other options which can be toggled and configured. **Terrain** and **Decorations**. They can be mixed and matched to provide a wide range of customization.
