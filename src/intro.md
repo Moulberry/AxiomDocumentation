@@ -18,7 +18,7 @@ Upon creating a new creative world, you should see a 10th hotbar slot containing
 
 - To open/close the [Editor Mode](editor/intro.md), press Right Shift.
 
-These keybinds can be adjusted in Minecraft's [Controls Menu](https://minecraft.fandom.com/wiki/Options#Controls).
+These keybinds can be adjusted in Minecraft's [Controls Menu](https://minecraft.wiki/Options#Controls).
 
 ---
 

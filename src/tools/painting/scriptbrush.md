@@ -299,4 +299,4 @@ end
 
 [^note2]: [The Block Properties Wiki](https://minecraft.wiki/w/Block_properties)
 
-[^note3]: A list of block tags can be found [here](https://minecraft.fandom.com/wiki/Tag#Blocks).
+[^note3]: A list of block tags can be found [here](https://minecraft.wiki/Tag#Blocks).
