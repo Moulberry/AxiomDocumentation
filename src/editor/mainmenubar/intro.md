@@ -10,11 +10,11 @@ The main menu bar gives users access to crucial functionality of the mod. Here y
 
 ## Tool Masks
 
-Clear and open the tool mask editing window. See [Tool Masks](toolmasks.md)
+Clear and open the tool mask editing window. See [Tool Masks](/editor/windows/toolmasks.md)
 
 ## Window
 
-The **Windows** submenu lets the user toggle [Windows](windows/intro.md). If you ever close a window and want it back, this submenu allows you to re-enable it. With this window, you can also save and restore a default layout.
+The **Windows** submenu lets the user toggle [Windows](/editor/windows/intro.md). If you ever close a window and want it back, this submenu allows you to re-enable it. With this window, you can also save and restore a default layout.
 
 To store a layout, pressing the 'Store Current Layout as Default' will save your current window layout. To restore the saved layout, press the 'Restore Default Layout' button. You can export and import layouts to and from your clipboard.
 
@@ -26,5 +26,5 @@ The **Keybinds** button opens a window to edit and set keybinds for tools and op
     
 The **Help** submenu contains useful information and configuration options.
 
-The dropdown contains links to information and resources. The [style editor](windows/themes.md) can be accessed through this window, allowing you to change and import custom colours for the Editor UI. 
+The dropdown contains links to information and resources. The [style editor](editor/windows/themes.md) can be accessed through this window, allowing you to change and import custom colours for the Editor UI. 
 

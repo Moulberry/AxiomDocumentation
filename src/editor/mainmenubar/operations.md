@@ -2,7 +2,7 @@
 
 The **Operations** submenu contains various useful 'operations' to modify blocks within [Selections](/editor/selections.md).
 
-> IMPORTANT: Operations only affect [Selections](/editor/selections.md).
+> IMPORTANT: Operations **only** affect blocks within [Selections](/editor/selections.md).
 
 ## Fill
 
@@ -81,9 +81,10 @@ Again, transparent and non-solid blocks are considered.
 
 ## Generate Colour Field
 
-The 'Generate Colour Field' operation Generates a colour field using the [CIELAB colour space](https://en.wikipedia.org/wiki/CIELAB_color_space) within a selection.
+The 'Generate Colour Field' operation Generates a colour field using the [OKLab colour space](https://en.wikipedia.org/wiki/Oklab_color_space) within a selection.
 
-A colour field (colour space) is a way to organise colours. CIELAB was chosen as it utilises XYZ coordinates to represent LAB. LAB represents three components of the colour space:
+A colour field (colour space) is a way to organise colours in a 2D or 3D space. OKLab was chosen as it utilises XYZ coordinates to represent LAB. LAB represents three components of the colour space:
+
 ### **L - (Lightness)**
 - Brightness is mapped to positive X
 - Darkness is mapped to negative X
@@ -94,7 +95,7 @@ A colour field (colour space) is a way to organise colours. CIELAB was chosen as
 - Yellow is mapped to positive Z
 - Blue is mapped to negative Z
 
-All blocks within the colour field used are full, non-transparent blocks to reduce overlapping.
+All blocks within the colour field used are full, non-transparent blocks to reduce overlapping. Two blocks with duplicate textures such as infested stone and stone are removed in favour of a single block.
 
 If two blocks are similar enough, Axiom will attempt to place them in the same position. However, Axiom prevents this by offsetting blocks until there is no overlap. This means there's little chance for blocks to be excluded.
 

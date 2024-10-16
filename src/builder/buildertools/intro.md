@@ -16,4 +16,4 @@ There are two flags that apply to most Builder Tools:
 - **Copy Air**
   - Toggles the ability to copy air when moving a selection.
 
-![Builder Tools](/src/img/BuilderToolsOverview.png)
+![Builder Tools](/img/BuilderToolsOverview.png)
