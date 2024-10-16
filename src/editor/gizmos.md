@@ -2,24 +2,31 @@
 
 Gizmos are a common UI element which allows positioning within the 3D world.
 
-![Gizmo With All Elements](/src/img/gizmo.png)
+![Gizmo With All Elements](/img/gizmo.png)
 
 ## Gizmo Properties
 
 A gizmo can contain the following elements:
+
 - **Axis Arrows** These coloured arrows correspond to XYZ coordinates. The red, green and blue arrows allow the gizmo to be dragged along the X, Y and Z axis respectively.
+
 - **Center Node** The center node can be dragged to move the gizmo on all 3 axis. While dragging, the gizmo will maintain the same distance to the camera.
-- **Plane Nodes** The 
+
+- **Plane Nodes** The Plane Nodes are used to move the object along two axis at a time.
+
 - **Rotation Rings** The three Rotation rings allow you to perform rotations on objects. The red, green and blue rings allow the gizmo to be rotated on the X, Y and Z axis respectively. 
-- **Scale Nodes** The Scale nodes are used for [Display Entities](/builder/displayentities.md). Dragging one of the three Scale Nodes will stretch along the X, Y and Z axis respectively.
+
+- **Scale Nodes** The Scale nodes are used for [Display Entities](/contextmenu/displayentities.md). Dragging one of the three Scale Nodes will stretch along the X, Y and Z axis respectively.
+
 - **Global Gizmos** When a gizmo is set to global, the **Axis Arrows**, **Centre Node** and **Rotation Rings** are locked to the world's rotation.
+
 - **Local Gizmos** A local gizmo is when the **Axis Arrows**, **Centre Node** and **Rotation Rings** are locked to the gizmo's rotation.
 
 ## Gizmo Controls
 
 ### Builder Mode Gizmo Controls
 
-When using [Display Entities](/builder/displayentities.md) or [Marker Entities](/builder/marker.md), a gizmo is used to move and modify the entity. There are multiple keys you can use to alter how the gizmo is used to modify the entity. To select a gizmo, use left-click on the **Center Node**.
+When using [Display Entities](/contextmenu/displayentities.md) or [Marker Entities](/builder/marker.md), a gizmo is used to move and modify the entity. There are multiple keys you can use to alter how the gizmo is used to modify the entity. To select a gizmo, use left-click on the **Center Node**.
 
 | Key                | Description                                                                                                                                                                                                                            |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

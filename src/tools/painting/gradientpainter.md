@@ -10,8 +10,6 @@ The **Mask Surface** option allows only painting blocks which are adjacent to a 
 
 You may select the type of gradient to be either spherical or planar.
 
-![Plane vs Sphere in gradient selection](https://cdn.discordapp.com/attachments/1012669638578020403/1153873402931724417/2023-09-19_21.46.32.png)
-
 As you can see, for the "Plane" option, the gradient goes from pos1 to pos2 in one direction. For the "Sphere" option, The gradient radiates from pos1 to pos2, with pos2 being the radius, and pos1 being the center(i.e. starting point)
 
 # Interpolation
@@ -19,8 +17,6 @@ As you can see, for the "Plane" option, the gradient goes from pos1 to pos2 in o
 You may select the type of interpolation to be used: Nearest, Linear, and Bezier. See the difference below:
 
 In order from top to bottom: Nearest, Linear, Bezier.
-
-![Interpolation](https://cdn.discordapp.com/attachments/1012669638578020403/1153874160502722641/2023-09-19_21.24.42.png)
 
 Look up the curves to see how it is calculated specifically but in essence, nearest gives you hard boundaries between each block type. Linear gives a smooth transition as the name implies, and Bezier has a more rapid change in the center, and eases in/out. The effect is more apparent with larger gradients.
 

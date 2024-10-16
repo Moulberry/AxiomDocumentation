@@ -1,5 +1,7 @@
 # History
 
-The History window shows you an overview of how many and what operations you just performed. It serves as a visual aid to assist in performing undo (Ctrl+Z) and redo (Ctrl+Y) operations.
+The History window provides an interactive overview of the changes you've made to the world, as well as how many blocks each operation affected. It allows you to visualize the undo and redo actions, with the current history action highlighted with white text.
 
-> Tip: You can left-click history elements to *rewind* to that point, or right-click to point your camera towards the center of the edit.
+The History window can be interacted with directly. Clicking on a history entry with left click will revert all actions to that point. Right clicking the entry will point your camera towards the center of the edit.
+
+History is deleted after leaving the world. However, the [commercial license](https://axiom.moulberry.com/commercial) allows for history to be saved permanently across multiple worlds.

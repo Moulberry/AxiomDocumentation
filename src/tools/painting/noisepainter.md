@@ -51,6 +51,10 @@ Metaball noise creates a pattern that looks like overlapping blobs or spheres, w
     
 White noise generates a completely random pattern with no discernible structure, looking like static on an old television screen.
 
+### Splatter
+
+Follows a similar pattern to **Simplex** but adds a random offset to the distribution.
+
 ## Blocks  
 
 The section beneath the noise configuration allows you to specify the blocks used in painting, as well as determine their distribution within the noise pattern. You can adjust the block distribution by setting a threshold between 0 to 1 or specifying a per-block percentage from 0 to 100%. The threshold setting is particularly useful when you're tweaking parameters for complex noises like Worley.

@@ -1,187 +1,302 @@
 # Script Brush
 
-The Script Brush is a very unique tool, the scripting functionality mixed with useful functions can lead to near-unlimited possibilities. The use of clever logic can lead to things like simple texture generators all the way to structural generators.
+The Script Brush is a very powerful tool, it processes Lua code input which can be used to alter blocks based on multiple conditions.
 
-Although intimidating at first, once you understand the basic concept of programming and have read this documentation, you'll be ready to make your own scripts! 
+Assuming you know some programming basics, this documentation will teach and simplify the tool in it's entirety. 
 
-## Key Points
+The Lua programming language is similar to Python, but is more lightweight. Hence why it was used in the mod.
 
-- The Script Brush is a powerful, yet advanced tool so some knowledge of programming languages similar to Python is recommended. 
+### Script Examples
 
-- The Script Brush is similar to [Mask Scripting](/editor/windows/toolmasks.md).
+Even though the Script Brush can do almost anything, there are some things that it can't do so well. These include generating structures or anything that requires hard coding. The following examples may vary in difficulty.
 
-- An IDE[^note1] window is used to input your code. It uses a similar language to Python called Lua[^note2].
+- Terrain Generator
+- Texturing Brush
+- Rock Generator
+- Crop Painter
+- Spike Generator
+- Cave Generator
 
-- Lua doesn't require line indentation like most languages but Axiom provides a tabbing feature to indent. 
- 
-- There is only one built-in library[^note3] and there are currently no others.
+## Tool Options
 
-> The Script must use `return blocks.stone` or use `setBlock(x,y,z,blocks.stone)` to modify blocks in the world.
-
-There are many predefined variables and functions that can be used throughout the script to interact with the world. Listed below, are all variables and functions with descriptions and examples.
+The [Tool Options](/editor/windows/tooloptions.md) window is used to enter code. [Presets](/editor/toolpresets.md) can be used to save code to be used later.
 
 ## Custom Variables
 
-| Variables | Description                                                    | Example      |
-|-----------|----------------------------------------------------------------|--------------|
-| x,y,z     | These three variables represent the XYZ coordinates.           | if y==5      |
-| blocks    | Can be used to retrieve the **Blockstate ID** for a block.     | blocks.stone |
+These two variables allow you to interact with coordinates and retrieve Blockstate IDs.
+
+### x, y, z
+
+The values of these three variables represent the position of the [Target Block](/tools/intro.md#target-blocks). Meaning using these three values is much better than hardcoding specific coordinates.
+
+```lua
+if y<100 then
+--If the target block has a y level of less than 100
+    -- Do Something
+end
+```
+
+### blocks
+
+The blocks object (or table) allows searching for Blockstate IDs. Blockstate IDs are numerical values used to represent a block state. You shouldn't use these values directly as it can get confusing. 
+
+> Blockstate IDs are not the same as Block IDs[^note1].
+
+```lua
+dirt=blocks.coarse_dirt
+```
 
 ## Custom Functions
 
-| Functions                                                 | Description                                                                                       | Example                                                        |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| getBlock(x,y,z)                                           | Returns the **Blockstate ID** at the given position (x,y,z).                                      | getBlock(x,y,z)==blocks.stone                                  |
-| getBlockState(x,y,z)                                      | Returns the **Blockstate ID** property at a given position.                                       | getBlockstate(x,y,z)==withBlockProperty(blocks.chain,"axis=x") |
-| getHighestBlockYAt(x,z)                                   | Returns the Y value of the highest solid block on the X and Z coordinates.                        | getHighestBlockYAt(x,z)==20                                    |
-| getSimplexNoise(x,y,z,**seed**)                           | Returns a value between 0 and 1, representing the Simplex noise for the provided coordinates.     | getSimplexNoise(x,y,z,42)=>0.5                                 |
-| getVoroniEdgeNoise(x,y,z,**seed**)                        | Returns a value between 0 and 1, representing the Voroni Edge noise for the provided coordinates. | getVoroniEdgeNoise(x,y,z,01134)=>0.5                           |
-| isSolid(**Blockstate ID**)                                | Returns true if the **Blockstate ID** is solid, false if not.                                     | isSolid(getBlock(x,y,z))                                       |
-| isBlockTagged(**Blockstate ID**,"**tag**")                | Returns true if the **Blockstate ID** has the provided tag, false if not.                         | isBlockTagged(getBlock(x,y,z),"wooden_fences")                 |
-| withBlockProperty(**Blockstate ID**,"**property=value**") | Used to return or set a **Blockstate ID** with a **Blockstate ID** property.                      | withBlockProperty(blocks.oak_slab,"waterlogged=true")          |
-| getBlockProperty(**Blockstate ID**,"**property**")        | Returns the value of the provided **Blockstate ID** property.                                     | getBlockProperty(blocks.oak_slab,"waterlogged")==true          |
-| setBlock(x,y,z,**Blockstate ID**)                         | Set an additional **Blockstate ID** at a given position.                                          | setBlock(x,y,z,blocks.stone)                                   |
+Custom functions allow for further use of the two variables when combined.
 
-> Blockstate IDs with and without properties can be used in all functions which use a Blockstate ID
+### getBlock(x,y,z)
+
+Returns the Blockstate ID value for the given coordinate. This function **does not** return a Blockstate ID with block properties.
+
+In this example, I use `return` to place a block at the [Target Block](/tools/intro.md#target-blocks) position using `blocks.dirt`. Not to be confused with setBlock.
+
+```lua
+if getBlock(x,y,z)==blocks.grass_block then
+    -- get the target Blockstate ID and check if it matches the grass_block Blockstate ID
+    return blocks.dirt
+end
+```
+
+### setBlock(x,y,z,`Blockstate ID`)
+
+The setBlock function is another method to place blocks. Unlike using return, the position can be added without stopping the script.
+
+An offset to the block placement can be added as it uses the XYZ variables. Using the setBlock function instead of return enables the ability to set more than one block for every Target Block process.
+
+```lua
+carpetFitForAKing=blocks.pink_carpet
+
+if getBlock(x,y-1,z)~=blocks.air and getBlock(x,y,z)==blocks.air then
+    -- only allows blocks with an empty block above
+    setBlock(x,y,z,carpetFitForAKing)
+    -- changes the block at the target block position
+end
+```
+
+### isSolid(`Blockstate ID`)
+
+The isSolid function returns a boolean if the block has a solid collision box.
+
+```lua
+--Represents solid blocks with lime wool, everything else is represented with red glass
+
+currentBlock=getBlock(x,y,z)
+
+if isSolid(currentBlock) then
+    setBlock(x,y,z,blocks.lime_wool)
+else
+    setBlock(x,y,z,blocks.red_stained_glass)
+end
+```
+
+### getHighestBlockYAt(x,z)
+
+Returns the Y axis value for the highest block at the given x and z position. Unlike the other functions, this one returns a number between -64 and 319.
+
+```lua
+highestBlock=getHighestBlockYAt(x,z)
+
+if highestBlock > 100 then
+-- checks if the highest block is above Y=100
+    setBlock(x,highestBlock,z,blocks.snow_block)
+end
+```
+
+### withBlockProperty(`Blockstate ID`,`Property=Value`)
+
+The withBlockProperty function allows for adding properties to existing Blockstate IDs. This removes the limitation of using the [blocks object](#blocks) to set blocks in the world.
+
+```lua
+--Replaces wheat with its fully aged variant
+
+if getBlock(x,y,z)==blocks.wheat then
+    agedWheat=withBlockProperty(blocks.wheat,'age=7')
+
+    setBlock(x,y,z,agedWheat)
+end
+```
+
+### getBlockState(x,y,z)
+
+Unlike [getBlock](#getblockxyz), this function returns the exact Blockstate ID for the provided coordinate. 
+
+```lua
+--Replaces fully grown wheat with new wheat
+
+currentBlockState=getBlockState(x,y,z)
+--gets the exact blockstate ID for the target block 
+
+agedWheat=withBlockProperty(blocks.wheat,'age=7')
+newWheat=withBlockProperty(blocks.wheat,'age=0')
+--defines fully aged wheat and new wheat
+
+if currentBlockState==agedWheat then
+--check if the target block is wheat with the age of 7
+    setBlock(x,y,z,newWheat)
+end
+```
+
+### getBlockProperty(`Blockstate ID`,`Property`)
+
+The getBlockProperty function returns the value for the provided Blockstate ID and Property. Block Properties[^note2] are attributes used by Minecraft to determine things like stair rotation and redstone power levels.
+
+```lua
+--Checks if the target block can be waterlogged, and waterlogs it if possible
+
+currentBlockState=getBlockState(x,y,z)
+
+if getBlockProperty(currentBlock,'waterlogged')=='false' then
+    --Checks if the block isn't waterlogged. Only waterloggable blocks have this property
+
+    waterloggedBlock=withBlockProperty(currentBlock,'waterlogged=true')
+    --Gets the waterlogged variant of the current block
+    setBlock(x,y,z,waterloggedBlock)
+end
+```
+
+### isBlockTagged(`Blockstate ID`,`Tag`)
+
+This function can be used to check if a block is within a group such as fences or logs. This can reduce the use of manually listing blocks, saving performance in your script. The function returns true or false if the two block is within the tag group[^note3].
+
+```lua
+--Replaces all fences with their oak variant
+
+oakFence=blocks.oak_fence
+currentBlock=getBlock(x,y,z)
+
+if isBlockTagged(currentBlock,fences) then
+    setBlock(x,y,z,oakFence)
+end
+```
+
+### getSimplexNoise(x,y,z,`seed`)
+
+The 'getSimplexNoise' function is used to generate 3D noise using the [OpenSimplex](https://code.larus.se/lmas/opensimplex) noise algorithm. The function will return a 'random' float between 1 and 0 depending on the four inputs. 
+
+The seed value only accepts integer values. If the seed value is invalid, it will default to 0. If the seed value is left empty, the seed will be randomized.
+
+```lua
+--Places black and white and black concrete using a noise threshold, making an equally distributed pattern.
+
+niceSeed=69
+threshold=0.5
+
+if getSimplexNoise(x,y,z,niceSeed)>threshold then
+    setBlock(x,y,z,blocks.white_concrete)
+else
+    setBlock(x,y,z,blocks.black_concrete)
+end
+```
+
+### getVoroniEdgeNoise(x,y,z,`seed`)
+
+Similar to 'getSimplexNoise', however this function generates a 3D noise using the [Voroni Edge](https://en.wikipedia.org/wiki/Voronoi_diagram) algorithm.
+
+```lua
+--Places black and white and black concrete using a noise threshold, making an equally distributed pattern.
+
+niceSeed=420
+threshold=0.5
+
+if getVoroniEdgeNoise(x,y,z,niceSeed)>threshold then
+    setBlock(x,y,z,blocks.white_concrete)
+else
+    setBlock(x,y,z,blocks.black_concrete)
+end
+```
 
 ## Template Variables
 
-Template Variables are not shown in the help text. Template Variables are used to visually display tool settings, removing the need to edit values within the script itself. Most Template Variables Use a **title**, this is used to display the usage or function of the specific Template Variable. The **default** value is used to set the most appropriate value within the range. The **min** and **max** variables are used to set the ranges on sliders.
+Template Variables are used control the functionality of the script and to display options directly in the [Tool Options](/editor/windows/tooloptions.md) menu. 
 
-| Template Variable                     | Description                           | Example                              |
-|---------------------------------------|---------------------------------------|--------------------------------------|
-| `$once$`                              | Runs the script once per click.       | `$once$`                             |
-| `$blockState(title,block)$`           | Allows blocks to be input using GUI.  | `$blockState(Block to Paint,stone)$` |
-| `$int(title,default,min,max)$`        | Creates a slider with whole values.   | `$int(Randomness Multiplier,1,0,2)$` |
-| `$float(title,default,min,max)$`      | Creates a slider with decimal values. | `$float(Noise Threshold,0.5,0,1)$`   |
-| `$boolean(title,default(true/false))$`| Creates a toggle                      | `$boolean(Disable Randomness,true)$` |
+All Template Variables are encased using the '$' character when used in scripts.
 
-# Code Examples
+### once
 
-These four code examples range from a novice user all the way to a professional in terms of difficulty. Each script provides a description and a breakdown of how the script works. Feel free to copy these and mess around with them.
+The 'once' variable sets the brush to run the script once when using the tool, disabling the 'brush' effect.
 
-### **Novice**
-
-This script below is very basic, it replaces oak leaves with birch leaves.
+This variable does not return a value. It only alters the function of the script itself.
 
 ```lua
-if getBlock(x,y,z)==blocks.oak_leaves then
-	return blocks.birch_leaves
-end
-```
+--sets a singular block of pink wool at the mouse position per use of the brush.
 
-<details>
-    <summary>Novice Code Breakdown</summary>
-
-    The if check ensures that the current block is oak leaves. Using "getBlock(x,y,z)" targets the active block. 
-	
-	Then "blocks.oak_leaves" is used to check if the block IDs match.
-
-	Finally, the script returns birch leaves, therefore replacing oak leaves.
-
-</details>
-
-### **Advanced**
-
-This script places pink petal flowers using simplex noise to control the block property.
-
-```lua
-multiplier=$float(Multiplier,1,0,2)$
-noise=getSimplexNoise(x/8,y/8,z/8)
-
-if getBlock(x,y,z)==blocks.air and isSolid(getBlock(x,y-1,z)) and noise<(0.75*multiplier) then
-    return withBlockProperty(blocks.pink_petals,"flower_amount="..math.floor((getSimplexNoise(x/2,y/2,z/2,0)*4)))
-end
-```
-
-<details>
-    <summary>Advanced Code Breakdown</summary>
-
-	Firstly, The multiplier and noise variables by utilising the float variable and the simplex noise function.
-	
-	Then the script checks that the block is air and is above a solid surface while also checking if the noise is within range.
-
-	Finally, the block is placed using "withBlockProperty" to set the flower amount property. This uses a modified simplex noise that returns values between 0 and 4.
-
-</details>
-
-### **Expert** 
-
-The script below generates kelp in water using a maximum height to control the length of kelp.
-
-```lua
-multiplier=$float(Multiplier,1,0.01,4)$
-heightMax=$int(Maximum Height,25,1,50)$
-
-noise=math.random()
-length=math.floor(math.random(0,heightMax))
-
-if noise<(multiplier*0.1) and isSolid(getBlock(x,y-length,z)) and getBlock(x,y,z)==blocks.water then
-    for block = 0,length do
-        if not isSolid(getBlock(x,y-block,z)) then
-            setBlock(x,y-block,z,blocks.kelp_plant)
-        end
-    end
-    return blocks.kelp
-end
-```
-
-<details>
-    <summary>Expert Code Breakdown</summary>
-
-    Firstly, the script defines all the variables. 
-	
-	As the script builds the kelp from top to bottom, it checks if the lowest attemptable block is solid.  
-	
-	Then, for each solid block, the script places a kelp plant.
-
-	Once all kelp plant blocks are placed, the script then sets the active block to be the top piece of kelp. 
-
-</details>
-
-### **Professional**
-
-This final script creates a curved bowl shape using mathematical formulae. This is one of the most complex types of script brushes in Axiom.
-
-```lua
 $once$
-scale = $int(Scale,30,10,50)$
-flatness = $float(Bowl Flatness,0.8,0.1,2.5)$
-tolerance = (scale*10)*flatness
-block=$blockState(Block)$
 
-function isTolerable(a, b, tol)
-    return math.abs(a - b) <= tol
-end
+setBlock(x,y,z,blocks.pink_wool)
+```
 
-for DistX = -scale, scale do
-    for DistY = -scale, scale do
-        for DistZ = -scale, scale do
-            local formulaL = DistX^2 + DistY^2 + (DistZ^1.5)*-(flatness*10)^2
-            local formulaR = 0
-            if isTolerable(formulaL, formulaR, tolerance) then
-                setBlock(x + DistX, y + DistZ, z + DistY, block)
-            end
-        end
-    end
+### blockState(`title`,`default`)
+
+The 'blockState' variable allows the block to be set using the Tool Options menu using a [Block Icon](/editor/intro.md#block-icon-buttons) button. The default option can be set using a Block ID.
+
+```lua
+--Places the chosen block in the tool options. By default, oak leaves are chosen. The title: 'Leaf Type' is displayed to the right of the leaf icon
+
+leaf=$blockState(Leaf Type,oak_leaves)$
+
+setBlock(x,y,z,leaf)
+```
+
+### int(`title`,`default`,`min`,`max`)
+
+The 'int' variable adds a slider which can be used to input whole numbers into the script using a [Slider](/editor/intro.md#sliders).
+
+```lua
+--Creates pink wool pillars with a height which can be modified using the 'Height' slider
+
+$once$
+
+height=$int(Height,5,1,10)$
+--default value of 5, minimum value of 1 and maximum value of 10.
+
+for yo=1, height do
+	setBlock(x,y+yo,z,blocks.pink_wool)	
 end
 ```
 
-<details>
-    <summary>Professional Code Breakdown</summary>
+### float(`title`,`default`,`min`,`max`)
 
-    This script represents the following equation:
-	(X²+Y²+(Z¹.⁵)(-n)10^2)=0
-	Where n is the flatness variable. 
-	
-	The script draws the 3D shape by using a loop for each axis.
+Similar to the 'int' variable, but allows for floating point numbers within the [Slider](/editor/intro.md#sliders).
 
-</details>
+```lua
+--Allows for control over the threshold using the 'Threshold' slider
+
+threshold=$float(Threshold,0.5,0,1)$
+
+if getSimplexNoise(x,y,z)>threshold then
+    setBlock(x,y,z,blocks.white_concrete)
+else
+    setBlock(x,y,z,blocks.black_concrete)
+end
+```
+
+### boolean(`title`,`default`)
+
+Booleans allow for adding toggles to the Tool Options menu.
+
+```lua
+--Toggles between green and red concrete using the 'Toggle Green' button
+
+green=$boolean(Toggle Green,true)$
+--enabled by default as its set it to true
+
+if green then
+	setBlock(x,y,z,blocks.green_concrete)
+else
+	setBlock(x,y,z,blocks.red_concrete)
+end
+```
 
 ## Notes
 
-[^note1]: An integrated development environment (IDE) is a software application that provides comprehensive facilities for software development.
+[^note1]: [Block IDs](https://minecraft.wiki/w/Java_Edition_data_values/Pre-flattening) were swapped out in favour of the new Blockstate IDs in [1.13](https://minecraft.wiki/w/Java_Edition_1.13).
 
-[^note2]: Lua is a lightweight programming language designed for embedded use within applications.
+[^note2]: [The Block Properties Wiki](https://minecraft.wiki/w/Block_properties)
 
-[^note3]: The [Math Library](https://www.lua.org/pil/18.html) is the only built-in library in the Script Brush.
+[^note3]: A list of block tags can be found [here](https://minecraft.fandom.com/wiki/Tag#Blocks).

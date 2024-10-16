@@ -1,3 +1,3 @@
 # Utility Tools
 
-Utility tools assist builders for measuring and scaling builds appropriately.
+Utility tools assist builders for measuring and planning builds respectively.

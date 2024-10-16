@@ -4,12 +4,12 @@ The Modify tool is designed for manipulating [selections](/tools/selection/intro
 
 ## Overview
 
-| Mode             | Description                                                        |
-|------------------|--------------------------------------------------------------------|
-| Revolve          | Stretches the selection in a circular structure                    |
+| Mode             | Description                                                     |
+| ---------------- | --------------------------------------------------------------- |
+| Revolve          | Stretches the selection in a circular structure                 |
 | Translate Copies | Clones the selection a set number of times with a custom offset |
-| Rotate Copies    | A mix between Revolve and Translate Copies                         |
-| Twist            | Twists a selection using an angle and axis                         |
+| Rotate Copies    | A mix between Revolve and Translate Copies                      |
+| Twist            | Twists a selection using an angle and axis                      |
 
 ## Revolve
 
@@ -21,7 +21,7 @@ The **Add Translation** button will allow you to offset the end position of the 
 
 ## Translate Copies
 
-Similar to[stack](/builder/stack.md), Translate Copies allows for offsetting by relative or absolute values. The count controls the amount of copies to be made with the offset. 
+Similar to[stack](/builder/buildertools/stack.md), Translate Copies allows for offsetting by relative or absolute values. The count controls the amount of copies to be made with the offset. 
 
 Relative offsets are multiplied by the size of the selection.
 

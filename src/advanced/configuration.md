@@ -15,7 +15,7 @@ Below are the three files alongside their descriptions.
 | completedTutorials             | Lists the tools that have shown their short tutorial.                                  |
 | customDowngradeSuggestions     | Lists the downgrades suggested by Axiom.                                               |
 | defaultLayout                  | Stores the UI data for the currently enabled UI layout.                                |
-| globalScale                    | A float representing the [Editor](editor/intro.md) UI Scale.                           |
+| globalScale                    | A float representing the [Editor](/editor/intro.md) UI Scale.                          |
 | lastTranslationCount           | A value determining the amount of translations.                                        |
 | openEditorWindowTypes          | A list of open windows in the editor.                                                  |
 | rootEditorPalette              | The default block palette for the editor mode.                                         |
@@ -27,14 +27,14 @@ Below are the three files alongside their descriptions.
 
 ### `.axiom.hocon`
 
-| Key             | Description                                                                                                                                                                       |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| blockAttributes | Contains the currently toggled [Block Attributes](/builder/blockattributes.md).                                                                                                                                  |
-| blueprint       | Stores the toggle to automatically refresh and a list of all used blueprint tags.                                                                                                 |
-| capabilities    | Lists all abilities and their state. Also contains the `autoSwapToCreative` boolean that controls switching to creative when opening the [context menu](/builder/contextmenu.md). |
-| keybinds        | Stores in-game keybinds and settings for the Builder Mode and camera movement.                                                                                                    |
-| toolKeybinds    | Stores all Editor keybinds for switching tools.                                                                                                                                   |
-| rendering       | Stores booleans representing the toggles in the Toolbox found in the [Context Menu](/builder/contextmenu.md).                                                                     |
+| Key             | Description                                                                                                                                                                          |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| blockAttributes | Contains the currently toggled [Block Attributes](/contextmenu/blockattributes.md).                                                                                                  |
+| blueprint       | Stores the toggle to automatically refresh, a custom blueprint path and the list of all used blueprint tags.                                                                         |
+| capabilities    | Lists all abilities and their state. Also contains the `autoSwapToCreative` boolean that controls switching to creative when opening the [context menu](/contextmenu/intro.md).      |
+| keybinds        | Stores in-game keybinds and settings for the Builder Mode and camera movement.                                                                                                       |
+| toolKeybinds    | Stores all Editor keybinds for switching tools.                                                                                                                                      |
+| rendering       | Stores booleans representing the toggles in the Toolbox found in the [Context Menu](/contextmenu/intro.md) alongside the option to show [annotations](/tools/utility/annotation.md). |
 
 
 ### `imgui.ini`
