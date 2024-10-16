@@ -1,6 +1,6 @@
 # Tool Options
 
-The **Tool Options** [Window](editor/windows/intro.md) is used for [Tools](/tools/intro.md) to change their properties. Tool properties are essential for using the [Editor Mode](/editor/intro.md).
+The **Tool Options** [Window](/editor/windows/intro.md) is used for [Tools](/tools/intro.md) to change their properties. Tool properties are essential for using the [Editor Mode](/editor/intro.md).
 
 This window contains sections for each type of option as well as [Tool Presets](/editor/toolpresets.md).
 

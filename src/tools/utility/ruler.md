@@ -14,4 +14,4 @@ Here's the information you'll see:
 - Yaw (Only visible with two points): The yaw of the line between two points.
 - Pitch (Only visible with two points): The pitch of the line between two points.
 
-> Tip: Ruler measurements are permanantely visible even outside the editor, so make sure to remove them once you're done.
+> Tip: Ruler measurements are permanently visible even outside the editor, so make sure to remove them once you're done.

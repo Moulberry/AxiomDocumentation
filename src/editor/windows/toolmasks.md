@@ -33,31 +33,9 @@ Masks are conditions that depend on the target's state or the surrounding blocks
 | **Can See Sky**  | The `Can See Sky` condition returns true if the target block has direct access to the sky.                                                                                                                                                                          |
 | **Surface**      | The `Surface` mask returns true if the block is adjacent to air or liquids.                                                                                                                                                                                         |
 
-# Scripting
+# Mask Scripting
 
-Similar to the [Script Brush](/tools/painting/scriptbrush.md), the mask scripting allows users to input custom scripts using Lua. However, the rule of returning a boolean value still applies.
-
-## Custom Variables
-
-| Variables | Description                                                    | Example      |
-|-----------|----------------------------------------------------------------|--------------|
-| x,y,z     | These three variables represent the XYZ coordinates.           | if y==5      |
-| blocks    | Can be used to retrieve the blockstate[^note4] ID for a block. | blocks.stone |
-
-## Custom Functions
-
-|  <div style="width:100px">Functions</div> | Description                                                                                       | Example                                                                        |
-|-------------------------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| getBlock(x,y,z)                           | Returns the block ID at the given position (x,y,z).                                               | if getBlock(x,y,z)==blocks.stone                                               |
-| getBlockState(x,y,z)                      | Returns the blockstate[^note4] ID at a given position.                                            | if getBlockstate(x,y,z)==withBlockProperty(blocks.chain,"axis=x")              |
-| getHighestBlockYAt(x,z)                   | Returns the Y value of the highest block on the XZ coordinates.                                   | if getHighestBlockYAt(x,z)==20                                                 |
-| getSimplexNoise(x,y,z,"seed")             | Returns a value between 0 and 1, representing the Simplex noise for the provided coordinates.     | if getSimplexNoise(x,y,z,42)=>0.5                             |
-| getVoroniEdgeNoise(x,y,z,"seed")          | Returns a value between 0 and 1, representing the Voroni Edge noise for the provided coordinates. | if getVoroniEdgeNoise(x,y,z,01134)=>0.5                                   |
-| isSolid(block)                            | Returns true if the block is solid, false if not.                                                 | if isSolid(getBlock(x,y,z))                                                    |
-| isBlockTagged(block,"tag")                | Returns true if the block has the provided tag, false if not.                                     | if isBlockTagged(getBlock(x,y,z),"wooden_fences")                              |
-| withBlockProperty(block,"property=value") | Used to return or set a block with a block property.                                              | withBlockProperty(blocks.oak_slab,"waterlogged=true")                          |
-| getBlockProperty(block,"property")        | Returns the value of the provided block property.                                                 | if getBlockProperty(blocks.oak_slab,"waterlogged")==true                       |
-| setBlock(x,y,z,block)                     | Set an additional block at a given position.                                                      | setBlock(x,y,z,blocks.stone)                                                   |
+Mask Scripting uses the same formatting for the [Script Brush](/tools/painting/scriptbrush.md). Mask Scripts allow users to input custom scripts using Lua. However, a boolean value is still expected to be returned.
 
 ## Video Demo
 

@@ -48,4 +48,4 @@ Now, you can apply the model using the 'custommodeldata' tag in a resource pack.
 
 The scale is determined by the largest local coordinate. For example, if the clipboard scale is 10 x 20 x 10, the model scale will be 20.
 
-When the resource pack is enabled, axiom will detect these custom models as a [Display Entity](/builder/displayentities.md).
+When the resource pack is enabled, axiom will detect these custom models as a [Display Entity](/contextmenu/displayentities.md).

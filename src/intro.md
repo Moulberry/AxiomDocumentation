@@ -1,20 +1,25 @@
-![Axiom Logo](/img/axiomIcon.png)
+![Axiom Logo](img/axiomIcon.png)
 
 # Introduction
 
-Welcome to the Axiom Documentation, an introductory book about the all-in-one tool for editing Minecraft worlds. The goal of Axiom is to help you build terrain, organics and structures faster and to a higher quality. The mod brings innovative new tools and algorithms, while also improving ergonomics by reducing the feedback loop through realtime clientside visualizations. 
+Welcome to the Axiom Documentation, the introductory book about the all-in-one tool for editing Minecraft worlds. The goal of Axiom is to help you build terrain, organics, and structures faster and of a higher quality. The mod brings innovative new tools and algorithms, while also improving ergonomics by improving the feedback loop through real-time client-side visualizations. 
 
 ## Who Axiom Is For
 
-Axiom is intended for everyone from novice to professional. The tools are intuitive and easy to approach, while still providing lots of depth through settings for experienced users.
+Axiom is easy to learn yet hard to master, catering to Minecraft builders of all skill levels through various levels of complexity. The most beginner-friendly tools are found in the [Builder Mode](builder/intro.md), while the [Editor Mode](editor/intro.md) features more in-depth tools which can be combined with [Tool Masks](editor/windows/toolmasks.md) for further complexity.
 
-## Basic Controls
+## Getting Started
 
-To access the [Builder Mode](builder/intro.md) menu, press Left Alt
+Upon creating a new creative world, you should see a 10th hotbar slot containing an icon. If you don't see this, use the `/whynoaxiom` command in-game and follow the provided instructions. If the issue still persists, ask for help in the official [Axiom Discord](https://discord.gg/axiomtool).
 
-To open/close the [Editor Mode](editor/intro.md), press Right Shift
+- To access the [Builder Tools](builder/buildertools/intro.md) menu, hold Left Alt while the 10th hotbar slot is selected and use the scroll wheel to navigate the options.
 
-These keybinds can be adjusted in Minecraft's controls menu (Esc > Options > Controls)
+- To open the [Context Menu](contextmenu/intro.md), hold the Left Alt key with a hotbar slot from 0 to 9 selected.
 
+- To open/close the [Editor Mode](editor/intro.md), press Right Shift.
 
-###### Last Documentation Update: 03/06/24
+These keybinds can be adjusted in Minecraft's [Controls Menu](https://minecraft.fandom.com/wiki/Options#Controls).
+
+---
+
+###### Last Documentation Update: 20/Oct/24
