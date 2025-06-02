@@ -63,6 +63,7 @@ if getBlock(x,y,z)==blocks.grass_block then
 end
 ```
 
+
 ### setBlock(x,y,z,`Blockstate ID`)
 
 The setBlock function is another method to place blocks. Unlike using return, the position can be added without stopping the script.
@@ -172,6 +173,77 @@ currentBlock=getBlock(x,y,z)
 
 if isBlockTagged(currentBlock,fences) then
     setBlock(x,y,z,oakFence)
+end
+```
+
+## findClosestBlockToRGB(`RGB triplet color`, `flags bitarray (integer)`, `index`)
+
+Returns a blockstate id of the closest block to the RGB value. The RGB value is represented as an RGB merged binary triplet, where first second and third eight bit pairs represent r, g, b color values of the block accordingly. You can filter the block lookup list with flags, similar to how the color picker and gradient tools work. All flags are listed below. You can shift the picked block from the list by inputting an index, getting an i-th closest match to the hex.
+
+```
+Flags formatting:
+add 1 to use solid-only blocks
+add 2 to use opaque-only blocks
+add 4 to use 1x1x1-only blocks
+add 8 to use all sides-only blocks
+add 16 to use no ores
+add 32 to use no glazed terracota
+add 64 to use no tile entities
+```
+
+
+```lua
+function rgbToTriplet(r, g, b)
+return r*(256^2) + g*256 + b
+end
+
+-- places the definitively bluest block in the game
+
+color = rgbToHex(0, 0, 255)
+block = findClosestBlockToRGB(color, 0, 1)
+return block
+```
+
+### getBlockRGB(`Blockstate ID`)
+
+Returns the RGB triplet of a given block in one number, where first second and third eight bit pairs represent r, g, b color values of the block accordingly. You can split the merged triplet value into separate R, G, and B values with the modulus operator like in the example. It returns a ```nil``` value for blocks like air, so it needs handling for such cases.
+```lua
+--This function converts the RGB merged triplet value into separate rgb values, stored in a table
+function tripletToRGB(triplet)
+  local r = math.floor( triplet/(256^2) )
+  local g = math.floor( (triplet%(256^2))/256 )
+  local b = triplet%256
+return {r, g, b}
+end
+function vecScale(vec, scale)
+  local x = vec[1]*scale
+  local y = vec[2]*scale
+  local z = vec[3]*scale
+return{x, y, z}
+end
+function vecFloor(vec)
+  local x = math.floor(vec[1])
+  local y = math.floor(vec[2])
+  local z = math.floor(vec[3])
+return{x, y, z}
+end
+function rgbToTriplet(rgb_vec)
+-- You need to round your rgb values to an integer to avoid artifacts if doing vector math, I'm doing that with the floor function
+truncated_vector = vecFloor(rgb_vec)
+return truncated_vector[1]*(256^2) + truncated_vector[2]*256 +truncated_vector[3]
+end
+
+-- Darkens the block by 10%
+
+multiply = 0.90
+block = getBlock(x,y,z)
+color_triplet = getBlockRGB(block)
+if color_triplet then
+color_vector = tripletToRGB(color_triplet)
+scaled_color_vector = vecScale(color_vector, 0.90)
+darkened_triplet = rgbToTriplet(scaled_color_vector)
+darkened_block = findClosestBlockToRGB(darkened_triplet)
+return darkened_block
 end
 ```
 
