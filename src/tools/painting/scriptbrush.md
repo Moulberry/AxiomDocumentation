@@ -176,9 +176,9 @@ if isBlockTagged(currentBlock,fences) then
 end
 ```
 
-## findClosestBlockToRGB(`RGB triplet color`, `flags bitarray (integer)`, `index`)
+## findClosestBlockToRGB(`RGB triplet (integer)`, `flags bitarray (integer)`, `index`)
 
-Returns a blockstate id of the closest block to the RGB value. The RGB value is represented as an RGB merged binary triplet, where first second and third eight bit pairs represent r, g, b color values of the block accordingly. You can filter the block lookup list with flags, similar to how the color picker and gradient tools work. All flags are listed below. You can shift the picked block from the list by inputting an index, getting an i-th closest match to the hex.
+Returns a blockstate id of the closest block to the RGB value. The RGB value is represented as an 8-bit RGB triplet, where first second and third eight bit pairs represent r, g, b color values of the block accordingly. You can filter the block lookup list with flags, similar to how the color picker and gradient tools work. All flags are listed below. You can shift the picked block from the list by specifying an index, getting an i-th closest match to the given color.
 
 ```
 Flags formatting:
@@ -199,14 +199,14 @@ end
 
 -- places the definitively bluest block in the game
 
-color = rgbToHex(0, 0, 255)
+color = rgbToTriplet(0, 0, 255)
 block = findClosestBlockToRGB(color, 0, 1)
 return block
 ```
 
 ### getBlockRGB(`Blockstate ID`)
 
-Returns the RGB triplet of a given block in one number, where first second and third eight bit pairs represent r, g, b color values of the block accordingly. You can split the merged triplet value into separate R, G, and B values with the modulus operator like in the example. It returns a ```nil``` value for blocks like air, so it needs handling for such cases.
+Returns the RGB triplet of a given block in one number, where first second and third eight bit pairs represent r, g, b color values of the block accordingly. You can extract the individual RGB values from the triplet with the modulus operator like in the example. This function returns a ```nil``` value for blocks like air which can prompt an error in your script, so it needs handling for such cases.
 ```lua
 --This function converts the RGB merged triplet value into separate rgb values, stored in a table
 function tripletToRGB(triplet)
@@ -237,13 +237,14 @@ end
 
 multiply = 0.90
 block = getBlock(x,y,z)
+
 color_triplet = getBlockRGB(block)
-if color_triplet then
-color_vector = tripletToRGB(color_triplet)
-scaled_color_vector = vecScale(color_vector, 0.90)
-darkened_triplet = rgbToTriplet(scaled_color_vector)
-darkened_block = findClosestBlockToRGB(darkened_triplet)
-return darkened_block
+if color_triplet then -- handling of NIL values for blocks with no color like air or cave air
+	color_vector = tripletToRGB(color_triplet)
+	scaled_color_vector = vecScale(color_vector, 0.90)
+	darkened_triplet = rgbToTriplet(scaled_color_vector)
+	darkened_block = findClosestBlockToRGB(darkened_triplet)
+	return darkened_block
 end
 ```
 
