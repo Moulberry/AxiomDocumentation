@@ -52,6 +52,8 @@ To access the [Context Menu](contextmenu/intro.md), hold **Left Alt** while the 
         style="width:75%;">
 </p>
 
+These keybinds can be adjusted in Minecraft's [Controls Menu](https://minecraft.fandom.com/wiki/Options#Controls).
+
 ---
 
 ###### Last Documentation Update: 8/July/25
