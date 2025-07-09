@@ -15,7 +15,7 @@ To switch to a different Builder Tool, hold Left Alt and then scroll.
 
 The three main keybinds for the Builder Tools are **left-click, right-click** and **middle-click**. 
 
-**Middle-click** has similar a functionality to left and right-click but instead of selecting the corners, middle-click is used to select the faces. 
+**Middle-click** has similar functionality to left and right-click, but instead of selecting the corners, middle-click is used to select the faces. 
 
 When working with a selection, useful information such as *offset* and *size* is displayed above the hotbar.
 
