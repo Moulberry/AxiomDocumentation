@@ -2,9 +2,10 @@
 
 A [Selection](/editor/selections.md) can be copied to the clipboard using `Ctrl+C`. 
 
-The clipboard can be cleared by right-clicking the icon and choosing the 'clear' option. 
+The clipboard can be cleared, rotated and flipped by right-clicking the icon and choosing the corresponding options. 
 
 Left-clicking the 'Empty' clipboard icon opens up the [Blueprint Browser](blueprints.md).
+ 
 
 ## Using the clipboard
 

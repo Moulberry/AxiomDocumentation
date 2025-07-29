@@ -1,4 +1,4 @@
-## Shape Tool
+# Shape Tool
 
 The Shape Tool lets you make geometric shapes with your active block. Since these shapes are computed mathematically, they can adjust to any angle and transformation, giving you lots of control over their look. When you 'place' these objects, you can use the gizmo to reposition them and rotate them at any angle.
 
@@ -10,23 +10,23 @@ Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling r
 | --------- | ---------------------------------------- |
 | Solid     | Creates a solid 3D shape.                |
 | Flat      | Creates a flat 2D shape.                 |
-| Modelling | Creates a surface using multiple points. |
+
 
 ## Shapes
 
-| Shapes       | Flat Shapes        | Modelling Shapes |
-| ------------ | ------------------ | ---------------- |
-| Sphere       | Disk               | Convex Hull      |
-| Cuboid       | Plane              | Smart Surface    |
-| Octahedron   | Regular Polygon    | Triangle Strip   |
-| Supersphere  | Superellipse       | Triangle Fan     |
-| Cylinder     | Archimedean Spiral |                  |
-| Tube         |                    |                  |
-| Cone         |                    |                  |
-| Pyramid      |                    |                  |
-| Torus        |                    |                  |
-| Dodecahedron |                    |                  |
-| Icosahedron  |                    |                  |
+| Shapes       | Flat Shapes        | 
+| ------------ | ------------------ |  
+| Sphere       | Disk               |       
+| Cuboid       | Plane              |     
+| Octahedron   | Regular Polygon    |    
+| Supersphere  | Superellipse       |      
+| Cylinder     | Archimedean Spiral |                  
+| Tube         |                    |                  
+| Cone         |                    |                  
+| Pyramid      |                    |                  
+| Torus        |                    |                  
+| Dodecahedron |                    |                  
+| Icosahedron  |                    |                  
 
 ## Options
 

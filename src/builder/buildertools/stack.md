@@ -14,7 +14,9 @@ Once you're happy with your selection, you can stack it by scrolling with the mo
 
 Using the scroll wheel, you can nudge the selection by one step. Scrolling up will stack the selection away from the player and scrolling down will bring the selection closer to the player, so the direction the player is facing determines the direction the selection is stacked. The arrows on the faces of your selection will indicate the stack direction.
 
-By holding the 'X', 'Y' or 'Z' keys, you can force the selection to stack in a single axis. For example, holding the 'X' key while nudging the selection will force it to stack on the X axis only.
+By holding the `X`, `Y` or `Z` keys, you can force the selection to stack in a single axis. For example, holding the 'X' key while nudging the selection will force it to stack on the X axis only.
+
+Pressing `middle-click` while stacking will stack the selected object to the point you middle clicked on.
 
 ## Confirming Selections
 

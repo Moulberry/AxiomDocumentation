@@ -8,7 +8,7 @@ The **Operations** submenu contains various useful 'operations' to modify blocks
 
 The 'Fill' operation fills the selected area of blocks with a specified block. A small [Window](/editor/windows/intro.md) will open, allowing you to choose which block by clicking the block icon. This will open the 'Select Block' Window.
 
-The default keybind for this operation is `Ctrl+F`.
+The default keybind for it's quick operation counterpart is `Ctrl+F`.
 
 ## Fill Nearest
 
@@ -18,7 +18,7 @@ The 'Fill Nearest' operation doesn't use a specified block. Rather, it uses the 
 
 The 'Replace' operation is similar to 'Fill'. However, instead of filling every block in the selection, you can replace a specific block with another.
 
-The default keybind for this operation is `Ctrl+R`. Note that this shortcut is overridden when a [Placement](/editor/placement.md) is active.
+The default keybind for it's quick operation counterpart is `Ctrl+R`. Note that this shortcut is overridden when a [Placement](/editor/placement.md) is active.
 
 ## Set Biome
 

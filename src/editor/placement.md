@@ -11,11 +11,14 @@ The placement can be rotated clockwise along the X and Z axis by using `Ctrl+R`.
 | Option           | Description                                                                  |
 | ---------------- | ---------------------------------------------------------------------------- |
 | Keep Existing    | Stops the placement from overriding pre-existing blocks                      |
-| Paste Air        | Enables air to override pre-existing blocks                                  |
 | Merge Blocks     | Merges new blocks with existing blocks based on the block shape.             |
+| Paste Air        | Enables air to override pre-existing blocks                                  |
+|Paste Entities|Enables entities to be pasted as long as the placement contains entities by copying with entities before|
 | Unlock Rotation  | Allows the placement to be rotated at any angle rather than 90 degree steps. |
-| Rotate/Scale     | Opens the [Rotate/Scale](placement.md#Rotate_and_Scale) window.              |
+| Rotate/Scale...     | Opens the [Rotate/Scale](placement.md#Rotate_and_Scale) window.              |
+|Flip...|Flip by X, Y or Z; The shortcut for this feature is `Ctrl+F`|
 | Snap to ground   | Repositions the placement down to the nearest solid surface.                 |
+|Paste|Finalizes the placement|
 | Paste Copy       | Places a copy of the placement without cancelling the placement.             |
 | Paste and Select | Places the object and selects it, allowing for further modification.         |
 

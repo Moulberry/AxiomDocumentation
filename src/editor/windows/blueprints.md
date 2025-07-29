@@ -8,7 +8,7 @@ A **Blueprint** can be created by having content in your clipboard and pressing 
 
 Authors, tags and names are all ways by which you can easily look up blueprints later. For example by searching the tag ‘tree’ or ‘structure’ you can find all blueprints that include that tag. There are a couple dozen default tags that Axiom ships with in order to cover a wide array of possible blueprints but if those don’t quite cover your needs you can always create your own tag by clicking the ‘+’, entering the name and clicking the ‘Create Tag’ button inside the ‘Add Tag’ menu.
 
-When you save a blueprint a file system dialog opens up native to your operating system. This confirms the name you want to give to the blueprint and lets to save it as a .bp file on your local computer. This means that you can easily create blueprints in one world or server and then use them in another world without having to deal with messy import or export schemas. The files themselves are stored in your .minecraft folder under `.minecraft/config/axiom/blueprints`.
+When you save a blueprint a file system dialog opens up native to your operating system. This confirms the name you want to give to the blueprint and lets to save it as a .bp file on your local computer. This means that you can easily create blueprints in one world or server and then use them in another world without having to deal with messy import or export schemas. The files themselves are stored in your .minecraft folder under `.minecraft/config/axiom/blueprints` which can be changed in the [axiom.hocon](/advanced/configuration.md) configuration file.
 
 > Tip: Use tab to navigate the create blueprint window faster.
 
@@ -24,7 +24,7 @@ You can open the **Blueprint Browser** by clicking on the big button in the [Cli
 
 You'll be able to see thumbnails for all of your blueprints, as well as perform searches or filter by tags. Clicking a blueprint will 'open' it load into your [clipboard](clipboard.md).
 
-> Tip: You can go back and refresh by clicking the appropriate button next to the seach box.
+> Tip: You can go back and refresh by clicking the appropriate button next to the search box.
 
 ## Multiplayer
 

@@ -39,6 +39,8 @@ The Erase option allows for removing annotations by drawing a box across the scr
 
 This action can be undone with `Ctrl+Z` and redone with `Ctrl+Y`.
 
+The 'Clear ALL Annotations' option can be used to delete all annotations. Note that this option can't be undone.
+
 ### Move
 
 The Move mode is used to relocate images and text created using the annotation tool. Upon approaching an image or text annotation, a node will appear. Clicking this node will provide a [Gizmo](/editor/gizmos.md) to move the annotation.
