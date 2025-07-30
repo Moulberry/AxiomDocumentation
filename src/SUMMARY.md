@@ -45,11 +45,11 @@
         - [World Properties](editor/windows/worldproperties.md)
         - [Clipboard](editor/windows/clipboard.md)
         - [Target Info](editor/windows/targetinfo.md)
-        - Text Annotations
-        - Keybinds
+        - [Text Annotations](editor/windows/textannotations.md)
+        - [Keybinds](editor/windows/keybinds.md)
         - [Blueprint Browser](editor/windows/blueprints.md)
         - [Tool Masks](editor/windows/toolmasks.md)
-        - Style Editor
+        - [Style Editor](editor/windows/styleeditor.md)
         - [Views](editor/windows/views.md)
 - [Tools](tools/intro.md)
     - [Selection Tools](tools/selection/intro.md)
@@ -93,3 +93,7 @@
 - [Advanced](advanced/intro.md)
     - [Commands](advanced/commands.md)
     - [Config](advanced/configuration.md)
+- [Other](other/intro.md)
+  - [Whitelist](other/whitelist.md)
+  - [Commercial License](other/commerciallicense.md)
+  - [Resources](other/resources.md)

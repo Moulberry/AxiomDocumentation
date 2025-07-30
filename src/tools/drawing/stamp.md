@@ -5,7 +5,7 @@ The **Stamp Tool** is a [Blueprint](/editor/windows/blueprints.md) placement too
 | Option                      | Description                                                                                                                                                                                                                                                                                                    |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Base Chance                 | The base chance is the final factor that determines placement. A base chance of 1 means it will always place the blueprint regarding the Min Spacing.                                                                                                                                                          |
-| Min Spacing                 | The Minimum Spacing is the first factor that determines placement. A minimum spacing of 100% will result in the centre of two blueprints being at least 100% of the blueprint's width apart.                                                                                                                                        |
+| Min Spacing                 | The Minimum Spacing is the first factor that determines placement. A minimum spacing of 100% will result in the center of two blueprints being at least 100% of the blueprint's width apart.                                                                                                                                        |
 | Place (Immediate)           | The immediate option places all blueprints immediately after releasing your brush stroke.                                                                                                                                                                                                                      |
 | Place (Deferred)            | The deferred option allows you to place blueprints with multiple strokes. You can also manually offset and rotate the blueprints by using the [Gizmo](/editor/gizmos.md) located at the centre of the blueprint. New brush strokes will still apply the placement rules to previously placed blueprints.       |
 | Random Yaw                  | Randomises the placement by rotating the blueprint in a random direction.                                                                                                                                                                                                                                      |
@@ -19,7 +19,7 @@ To load blueprints into the **Stamp Tool**, click the 'Add Blueprint' button. Th
 
 Blueprints have their own offset and chance. If the Base of your blueprint should be lower, you can edit it here. If you want less or more of a specific blueprint, you can also change that here. 
 
-> Tip: you can also use the `Add Clipboard` button to quickly add your clipboard into the Stamp tool 
+> Tip: you can also use the `Add Clipboard` button to quickly add your clipboard into the Stamp tool. 
 
 ## Video Demo
 

@@ -16,7 +16,7 @@ The placement can be rotated clockwise along the X and Z axis by using `Ctrl+R`.
 |Paste Entities|Enables entities to be pasted as long as the placement contains entities by copying with entities before|
 | Unlock Rotation  | Allows the placement to be rotated at any angle rather than 90 degree steps. |
 | Rotate/Scale...     | Opens the [Rotate/Scale](placement.md#Rotate_and_Scale) window.              |
-|Flip...|Flip by X, Y or Z; The shortcut for this feature is `Ctrl+F`|
+|Flip...|Flip by X, Y, or Z; the shortcut for this feature is `Ctrl+F`|
 | Snap to ground   | Repositions the placement down to the nearest solid surface.                 |
 |Paste|Finalizes the placement|
 | Paste Copy       | Places a copy of the placement without cancelling the placement.             |

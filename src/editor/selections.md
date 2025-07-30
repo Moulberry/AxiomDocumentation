@@ -17,7 +17,7 @@ There are many selection tools in Axiom that you can use to make selections. Eac
 |Fill|`Ctrl+F`|Fills the active selection with a specified block. [^note1] |
 |Replace|`Ctrl+R`|Replaces specified blocks in your active selection with a block [^note1]|
 |Copy|`Ctrl+C`|Copies the selection to the [Clipboard](/editor/windows/clipboard.md)|
-|Copy With...||Copies the selection to the [Clipboard](/editor/windows/clipboard.md) including entities, air or both|
+|Copy With...||Copies the selection to the [Clipboard](/editor/windows/clipboard.md) including entities, air, or both|
 |Cut|`Ctrl+X`|Cuts the selection, allowing you to move it anywhere you'd like using the [Gizmo](gizmos.md)|
 |Duplicate|`Ctrl+J`|Duplicates the selection, similar to cut, but doesn't remove the blocks in the process|
 |Operations...||[Operations](/editor/mainmenubar/operations.md)|

@@ -11,7 +11,6 @@ Each shape lets you tweak its XZ or XYZ dimensions. In addition to controlling r
 | Solid     | Creates a solid 3D shape.                |
 | Flat      | Creates a flat 2D shape.                 |
 
-
 ## Shapes
 
 | Shapes       | Flat Shapes        | 

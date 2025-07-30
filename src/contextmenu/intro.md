@@ -6,7 +6,7 @@ Part of the Builder Mode, the Context Menu provides options which allow the user
 
 ### Hotbar Swapper
 
-The Hotbar Swapper is a better version of the vanilla “Saved Hotbars” which are stored in the creative inventory and are loaded using keybinds. The Hotbar Swapper is in the centre of the Context Menu and has infinite saveable hotbars. 
+The Hotbar Swapper is a better version of the vanilla “Saved Hotbars” which are stored in the creative inventory and are loaded using keybinds. The Hotbar Swapper is in the center of the Context Menu and has infinite saveable hotbars. 
 
 To save items to the hotbar swapper, use the scroll wheel while the context menu is open to select the hotbar you would like to save to.
 

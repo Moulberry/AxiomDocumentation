@@ -20,11 +20,11 @@ To store a layout, pressing the 'Store Current Layout as Default' will save your
 
 ## Keybinds
 
-The **Keybinds** button opens a window to edit and set keybinds for tools and operations.
+The **Keybinds** button opens a [window](/editor/windows/keybinds.md) to edit and set keybinds for tools and operations.
 
 ## Help
     
 The **Help** submenu contains useful information and configuration options.
 
-The dropdown contains links to information and resources. The [style editor](windows/themes.md) can be accessed through this window, allowing you to change and import custom colours for the Editor UI. 
+The dropdown contains links to information and resources. The [style editor](/editor/windows/styleeditor.md) can be accessed through this window, allowing you to change and import custom colours for the Editor UI. 
 

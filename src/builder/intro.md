@@ -21,6 +21,6 @@ When working with a selection, useful information such as offset and size is dis
 
 ## Gameplay
 
-Using Ctrl + C while looking at a block will copy its exact nbt state.
+Using `Ctrl+C` while looking at a block will copy its exact nbt state. Copied block properties are displayed in the items tool tip.
 
 When searching in the creative inventory, pressing enter will add the first listed block to your current hotbar slot.

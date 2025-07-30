@@ -1,6 +1,6 @@
 # Ruler Tool
 
-The **Ruler** Tool is designed to measure the distance between two or more points in a world. You can add points to the world by right-clicking. Once you have selected two or more points, a line appears between the most recent point and the one before it. The rounded Euclidean distance, or straight line distance, is shown in the centre of this line. You can keep adding more points or move them around via [Gizmos](editor/gizmos.md) as needed.
+The **Ruler** Tool is designed to measure the distance between two or more points in a world. You can add points to the world by right-clicking. Once you have selected two or more points, a line appears between the most recent point and the one before it. The rounded Euclidean distance, or straight-line distance, is shown in the center of this line. You can keep adding more points or move them around via [Gizmos](editor/gizmos.md) as needed.
 
 When you check the tool options, you'll find more information about these points. What's shown depends on whether you've chosen two or more points.
 

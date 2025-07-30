@@ -26,7 +26,7 @@ To undock a window, drag it by the title across the screen.
 
 ### Themes
 
-Themes can be used to further customise the Editor UI with custom colours. To edit the current theme, click `Style Editor` under `Help` in the [Main Menu Bar](/src/editor/mainmenubar/intro.md). Themes can be imported and exported from the clipboard. 
+Themes can be used to further customise the Editor UI with custom colours. To edit the current theme, click [Style Editor](/editor/windows/styleeditor.md) under `Help` in the [Main Menu Bar](/src/editor/mainmenubar/intro.md). Themes can be imported and exported from the clipboard. 
 
 ### Select Block
 

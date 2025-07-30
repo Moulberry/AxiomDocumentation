@@ -27,6 +27,8 @@ The Text mode is used to place text in the world, similar to [Text Displays](/co
 
 The 'Shadow' option toggles the shadow effect on the text. The 'Billboard' drop-down determines how the text is shown to the player.
 
+> Note: Unlike Text display entities, text annotations can't be formatted by JSON syntax.
+
 ### Image
 
 The Image mode enables the user to import images into the world.

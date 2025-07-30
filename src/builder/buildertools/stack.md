@@ -16,7 +16,7 @@ Using the scroll wheel, you can nudge the selection by one step. Scrolling up wi
 
 By holding the `X`, `Y` or `Z` keys, you can force the selection to stack in a single axis. For example, holding the 'X' key while nudging the selection will force it to stack on the X axis only.
 
-Pressing `middle-click` while stacking will stack the selected object to the point you middle clicked on.
+Pressing `middle-click` while stacking will stack the selected object to the point you middle-clicked on.
 
 ## Confirming Selections
 

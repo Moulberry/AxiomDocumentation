@@ -6,7 +6,7 @@ To use, click on pos1 and you will see a line appear. Click and drag to paint fr
 
 The **Mask Surface** option allows only painting blocks which are adjacent to a non-solid block.
 
-By default the gradient painter only affects solid blocks, like all painter tools. To make it affect air as well, you need to use [tool masks](/editor/windows/toolmasks.md).
+By default, the gradient painter only affects solid blocks, like all painter tools. To make it affect air as well, you need to use [tool masks](/editor/windows/toolmasks.md).
 
 ## Planar vs Spherical Gradients
 
@@ -42,4 +42,4 @@ If this option is enabled, the gradient will be applied in such a way that it do
 The **Copy Properties** option appears if one of the selected blocks can have block properties. 
 Painting with this option enabled will automatically match the properties of blocks you're painting over.
 
-The **Type Replace** option appears if all of the selected blocks have variants such as stairs, slabs and fences etc. Painting with this option enabled will automatically replace the type of blocks you're painting over and keep their properties in the process.
+The **Type Replace** option appears if all the selected blocks have variants such as stairs, slabs, and fences, etc. Painting with this option enabled will automatically replace the type of blocks you're painting over and keep their properties in the process.
