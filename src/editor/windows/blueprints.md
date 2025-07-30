@@ -22,7 +22,7 @@ Once you have blueprints, you can view them in the **Blueprint Browser**.
 
 You can open the **Blueprint Browser** by clicking on the big button in the [Clipboard window](clipboard.md), or by using Main Menu Bar > Windows > Blueprint Browser
 
-You'll be able to see thumbnails for all of your blueprints, as well as perform searches or filter by tags. Clicking a blueprint will 'open' it load into your [clipboard](clipboard.md).
+You'll be able to see thumbnails for all of your blueprints, as well as perform searches or filter by tags. Enabling 'Search inside Folders' will search your blueprint browser recursively. Clicking a blueprint will 'open' it and load it into your [Clipboard](clipboard.md).
 
 > Tip: You can go back and refresh by clicking the appropriate button next to the search box.
 

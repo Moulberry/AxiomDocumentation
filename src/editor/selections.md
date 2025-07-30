@@ -24,3 +24,5 @@ There are many selection tools in Axiom that you can use to make selections. Eac
 
 
 [^note1]: To be able to specify block properties for the block you are working with, use [Operations](/editor/mainmenubar/operations.md)
+
+>Tip: Using 'Move Selection' reveals [Scale Nodes](/editor/gizmos.md#gizmo-properties) at the tip of axis arrows for the gizmo, allowing for scaling selections.

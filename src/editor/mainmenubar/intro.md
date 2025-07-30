@@ -28,3 +28,5 @@ The **Help** submenu contains useful information and configuration options.
 
 The dropdown contains links to information and resources. The [style editor](/editor/windows/styleeditor.md) can be accessed through this window, allowing you to change and import custom colours for the Editor UI. 
 
+> Tip: You can also use 'Skip Tutorial' from the help submenu to skip the tutorial popups if you are working with multiple minecraft instances regularly and forgot to copy [.axiominternal](/advanced/configuration.md)
+

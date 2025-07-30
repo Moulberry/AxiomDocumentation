@@ -10,10 +10,12 @@ The tools that are currently available in this section are:
 - [Erase](erase.md)
 - [Setup Symmetry](setupsymmetry.md)
 
-There are two flags that apply to most Builder Tools:
+There are three flags that apply to most Builder Tools:
+- **Keep Existing**
+  - Toggles the ability to prevent overriding pre-existing blocks.
 - **Copy Entities**
   - Toggles the ability to copy entities when moving a selection.
 - **Copy Air**
   - Toggles the ability to copy air when moving a selection.
 
-![Builder Tools](/src/img/BuilderToolsOverview.png)
+![Builder Tools](/img/BuilderToolsOverview.png)

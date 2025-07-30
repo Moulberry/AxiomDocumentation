@@ -22,4 +22,4 @@ These keybinds can be adjusted in Minecraft's [Controls Menu](https://minecraft.
 
 ---
 
-###### Last Documentation Update: 20/Oct/24
+###### Last Documentation Update: 30/Jul/25
