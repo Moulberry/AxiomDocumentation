@@ -11,5 +11,3 @@ The Commercial License includes features such as:
 - More features to come.
 
 For more information or to purchase a license, visit the [Website](https://axiom.moulberry.com/commercial).
-
->If you are having questions about the legality of Axiom regarding 'Commercial Licenses' after reading Mojang's [EULA](https://www.minecraft.net/en-us/eula) **and** [Usage Guidelines](https://www.minecraft.net/en-us/usage-guidelines) or you have general legal questions regarding [Moulberry's EULA](https://axiom.moulberry.com/eula) please contact Moulberry via Discord or the official [Axiom Discord](https://discord.gg/axiomtool).
