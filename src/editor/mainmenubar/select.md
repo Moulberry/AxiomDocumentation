@@ -2,6 +2,15 @@
     
 The Select submenu lets users perform a variety of functions to modify [Selections](/tools/selection/intro.md). Blocks within the selection are not factored in the following options, only the selection shape is modified.
 
+## Clear
+- Clears active selections.
+
+## Move Selection
+- Moves the selection but not the blocks within.
+
+## Filter
+- Filters the selection to only the block or block type provided.
+
 ## Expand
 
  - Expands the selection surface with the provided offset.

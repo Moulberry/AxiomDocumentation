@@ -1,6 +1,6 @@
 # Path
 
-The path tool features the ability to set multiple points in a 3D environment and choose how each point is connected with blocks.
+The **path** tool features the ability to set multiple points in a 3D environment and choose how each point is connected with blocks.
 
 The block used is determined by the [Active Block](/editor/windows/activeblock.md)
 

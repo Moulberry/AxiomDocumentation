@@ -21,7 +21,7 @@ The default placement keybinds may be more unique to Axiom's functionality, howe
 - Confirm: Enter
 - Delete: Delete / Backspace
 
-Most keybinds for the Editor Mode can be changed in the [Keybinds Window](/editor/mainmenubar/intro.md#keybinds).
+Most keybinds for the Editor Mode can be changed in the [Keybinds Window](/editor/windows/keybinds.md).
 
 ## Menu Bars 
 

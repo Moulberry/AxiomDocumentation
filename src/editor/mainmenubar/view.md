@@ -18,6 +18,11 @@ Be aware that biomes in Minecraft are defined in a 4x4x4 grid. However, to make 
 
 The default shortcut for this view is `Ctrl+B`.
 
+## Show Annotations
+Toggles the rendering of [annotations](/tools/utility/annotation.md).
+
+## Show Ruler
+Toggles the rendering of [rulers](/tools/utility/ruler.md).
 ## Show Key Presses
 
 This shows your keyboard and mouse inputs in the bottom-right corner of the screen. This can be useful for making tutorials or debugging problems.
@@ -35,3 +40,6 @@ The 'Min Brightness' slider ranges from 0 to 1. This lets you change how dark un
 The 'Fluid Opacity' slider ranges from 0 to 1. This lets you change the opacity of water to alter its visibility. A value of 0 will result in water being invisible.
 
 Lava and modded fluids are not affected due to performance concerns.
+
+## Block Version
+The 'Block Version' dropdown lets you set a Minecraft version to highlight blocks red in Axiom's user interface that are incompatible with the version specified. Very useful if you want to, for instance, use Axiom to build structures for 1.8 servers.

@@ -6,19 +6,31 @@ The **Operations** submenu contains various useful 'operations' to modify blocks
 
 ## Fill
 
-The 'Fill' operation fills the selected area of blocks with a specified block. A small [Window](/editor/windows/intro.md) will open, allowing you to choose which block by clicking the block icon. This will open the 'Select Block' Window.
+The default 'Fill' operation fills the selected area of blocks with a specified block. A small [Window](/editor/windows/intro.md) will open, allowing you to choose which block by clicking the block icon. This will open the 'Select Block' Window. The Dropdown lets you choose how the operation will fill the selection.
+|Mode|Description|
+|-|-|
+|Fill...|Fills a selection|
+|Fill Outline...|Fills all edges of a selection|
+|Fill Walls...|Fills the horizontal edges of a selection|
+|Fill Top...|Fills the top edges of a selection|
+|Fill Bottom...|Fills the bottom edges of a selection|
 
-The default keybind for this operation is `Ctrl+F`.
+The default keybind for its quick operation counterpart is `Ctrl+F`.
 
 ## Fill Nearest
 
-The 'Fill Nearest' operation doesn't use a specified block. Rather, it uses the nearest block that isn't air for each block within the selection.
+The 'Fill Nearest' operation doesn't use a specified block to fill the selection. Rather, it uses the nearest block that isn't air for each block within the selection.
 
 ## Replace
 
 The 'Replace' operation is similar to 'Fill'. However, instead of filling every block in the selection, you can replace a specific block with another.
 
-The default keybind for this operation is `Ctrl+R`. Note that this shortcut is overridden when a [Placement](/editor/placement.md) is active.
+The default keybind for its quick operation counterpart is `Ctrl+R`. Note that this shortcut is overridden when a [Placement](/editor/placement.md) is active.
+
+## Type Replace
+
+The 'Type Replace' operation is similar to 'Replace'. However it replaces an entire range of blocks based on their type. Blocks to choose from are limited to blocks that have multiple variants.
+Note that Block properties will be preserved when replacing. 
 
 ## Set Biome
 
@@ -30,14 +42,14 @@ The 'Autoshade' operation shades your selection using a sun angle, either at the
 
 The Autoshade Window has many options to control how blocks are lit.
 
-| Option              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Sun                 | When enabled, lighting is used to shade blocks. When disabled, blocks are shaded with Ambient Occlusion.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| From                | The 'From' drop-down controls how the selection is lit. The different lighting modes include: **Player Position**, **Custom Positions** and **Sun Angle**. When the **Player Position** is selected, the light source is centred to the player position. With **Custom Positions**, you can set multiple fixed light sources. Pressing 'Add Position' will add a new light source at your current position. Each source is marked with a yellow 'sun' and the intensity can be changed to alter how bright the light source is. The **Sun Angle** creates a 'sun' light source at a set angle. This is similar to a 'spot' light source, however, sun light sources affect everything at the same angle. |
-| Ambient Occlusion   | Ambient Occlusion determines how exposed the block is to the light source. The less exposed a block is, the darker it'll be shaded.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Global Illumination | Global Illumination is the effect of light 'bouncing' off multiple objects. Increasing this slider will result in more 'bounces'.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Dither              | Adds a blending effect to reduce the sharp texture changes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Palette Options     | The 'Palette Options' section is used to determine what blocks are used when shading. When the 'Type' drop-down is set to **Automatic**, blocks will be chosen depending on the surface. You will be provided with a set of toggles to filder out blocks you don't want. When the 'Type' drop-down is set to **Custom**, You'll be able to input your own blocks. The list is ordered from dark to light and you can influence the amount of a specific block by using the slider adjacent to the block icon.                                                                                                                                                                                            |
+| Option | Description |
+| ------ |-------- |
+| Sun    | When enabled, lighting is used to shade blocks. When disabled, blocks are shaded with Ambient Occlusion.|
+| From   | The 'From' drop-down controls how the selection is lit. The different lighting modes include: **Player Position**, **Custom Positions** and **Sun Angle**. When the **Player Position** is selected, the light source is centred to the player position. With **Custom Positions**, you can set multiple fixed light sources. Pressing 'Add Position' will add a new light source at your current position. Each source is marked with a yellow 'sun' and the intensity can be changed to alter how bright the light source is. The **Sun Angle** creates a 'sun' light source at a set angle. This is similar to a 'spot' light source, however, sun light sources affect everything at the same angle. |
+| Ambient Occlusion   | Ambient Occlusion determines how exposed the block is to the light source. The less exposed a block is, the darker it'll be shaded.|
+| Global Illumination | Global Illumination is the effect of light 'bouncing' off multiple objects. Increasing this slider will result in more 'bounces'.|
+| Dither              | Adds a blending effect to reduce the sharp texture changes.|
+| Palette Options     | The 'Palette Options' section is used to determine what blocks are used when shading. When the 'Type' drop-down is set to **Automatic**, blocks will be chosen depending on the surface. You will be provided with a set of toggles to filter out blocks you don't want. When the 'Type' drop-down is set to **Custom**, You'll be able to input your own blocks. The list is ordered from dark to light and you can influence the amount of a specific block by using the slider adjacent to the block icon.|
 
 You can save and load [Presets](/editor/toolpresets.md) for the Autoshade operation in the 'Presets' section.
 

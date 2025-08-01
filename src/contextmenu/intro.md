@@ -6,15 +6,17 @@ Part of the Builder Mode, the Context Menu provides options which allow the user
 
 ### Hotbar Swapper
 
-The Hotbar Swapper is a better version of the vanilla “Saved Hotbars” which are stored in the creative inventory and are loaded using keybinds. The Hotbar Swapper is in the centre of the Context Menu and has 9 saveable hotbars. 
+The Hotbar Swapper is a better version of the vanilla “Saved Hotbars” which are stored in the creative inventory and are loaded using keybinds. The Hotbar Swapper is in the center of the Context Menu and has infinite saveable hotbars. 
 
 To save items to the hotbar swapper, use the scroll wheel while the context menu is open to select the hotbar you would like to save to.
 
 Then close the context menu and fill your hotbar with the items you want. When you’re done, you can scroll to the next hotbar you would like to modify. Another way to modify hotbars would be to click on an item with left-click and drop it into another position with left-click.
 
-> Note: Hotbars are not transferred between worlds
+> Note: Hotbars are not transferred between worlds but can be copied and renamed to your world in the 'minecraft/config/axiom/hotbars' folder 
 
 Loading saved Hotbars is simple. Just use the scroll wheel in the context menu to select the hotbar you’d like to use. Then close the context menu and the blocks and items you previously saved should be loaded into your hotbar.
+
+>Tip: Setting 'autoSwapToOtherHotbarWithItem=false' to true in [axiom.hocon](/advanced/configuration.md) will make your hotbar automatically swap to a hotbar already containing the item when middle-clicking.
 
 ### Capabilities
 Capabilities allow you to change the way you place, destroy and modify blocks. When a capability is enabled, the button will be tinted green. Disabled capabilities are represented as greyed. 

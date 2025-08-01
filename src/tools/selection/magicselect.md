@@ -18,4 +18,12 @@ The **Range** option is a slider which lets you set how far the algorithm should
 
 The **Surface Only** option is a toggle which makes the tool only select the blocks on the surface of the selection or, equivalently, all blocks adjacent to air or the ‘outside’.
 
+The **Up** option is a toggle that makes the tool only select blocks that are located above the cursor, including the block it is hovering on.
+
+The **Down** option is a toggle that makes the tool only select blocks that are located below the cursor, including the block it is hovering on.
+
+The **Horizontal** option is a toggle that allows the tool to select horizontally adjacent blocks. 
+
+The **Corners** option is a toggle that requires 'Horizontal' to be enabled. It will allow the tool to select blocks that aren't directly touching each other and are within the range specified by 'Range'.
+
 > Tip: You can drag-click across multiple block types to select more than one block type.

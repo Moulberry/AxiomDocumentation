@@ -10,7 +10,7 @@ To save presets, first set the configuration of the tool you'd like to save. Cli
 
 ## Tools which utilise presets
 
-- [Autoshade](mainmenubar.md#autoshade)
+- [Autoshade](/editor/mainmenubar/operations.md#autoshade)
 - [Distort](/tools/manipulation/distort.md)
 - [Elevation](/tools/heightmap/elevation.md)
 - [Gradient Painter](/tools/painting/gradientpainter.md)

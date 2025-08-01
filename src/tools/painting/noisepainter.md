@@ -8,6 +8,8 @@ Next, we have the scale option, which adjusts the size of the noise relative to 
 
 Finally, the Anisotropic option enables control of scale on each axis individually, allowing for a stretched effect. 
 
+By default, the noise painter only affects solid blocks, like all painter tools. To make it affect air as well, you need to use [tool masks](/editor/windows/toolmasks.md).
+
 ## Noises
 
 There are a few shared settings across the different noises. The common options between these noises are listed below, with specific settings for each noise described in their respective sections.
@@ -64,6 +66,12 @@ Clicking the '+' sign adds a new block. Clicking on an existing block allows you
 To modify the property of a block, right-click on the block icon and a menu will appear, allowing you to toggle and set different properties.
 
 When one or more blocks with multiple properties is used, a **Copy Properties** button will appear at the bottom of the block list. This will paint over existing blocks with the same block state, while keeping the noise pattern.
+
+## Conditional Options
+The **Copy Properties** option appears if one of the selected blocks can have block properties. 
+Painting with this option enabled will automatically match the properties of blocks you're painting over.
+
+The **Type Replace** option appears if all the selected blocks have variants such as stairs, slabs, and fences, etc. Painting with this option enabled will automatically replace the type of blocks you're painting over and keep their properties in the process.
 
 ## Preview
 
